@@ -30,8 +30,8 @@ ui:
 
 social:
     github:
-        user: allejo
-        repo: jekyll-docs-theme
+        user: mazzanicolas
+        repo: projects
     twitter:
         enabled: false
         via:
