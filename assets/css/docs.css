@@ -300,6 +300,7 @@ body {
     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important*/
     font-family: "Computer Modern" !important; 
     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+    font-weight: bold;
 }
 
 .carbonad-text {
@@ -1136,7 +1137,10 @@ h1[id] {
 }
 
 .bs-customizer input[type=text] {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    /*font-family: Menlo, Monaco, Consolas, "Courier New", monospace;*/
+    font-family: "Computer Modern"; 
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+    font-weight: bold;
     background-color: #fafafa
 }
 
