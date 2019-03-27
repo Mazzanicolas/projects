@@ -3,7 +3,7 @@ name: Projects
 
 project:
     version: 0.1.0
-    
+    download_url: https://github.com/allejo/jekyll-docs-theme/releases
 
 license:
     software: MIT License
