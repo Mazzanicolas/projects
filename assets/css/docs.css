@@ -1141,7 +1141,7 @@ h1[id] {
     font-family: "Computer Modern"; 
     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
     font-weight: bold;
-    background-color: #fafafa
+    background-color: #c52c2c
 }
 
 .bs-customizer .help-block {
