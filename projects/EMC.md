@@ -3,10 +3,10 @@ layout: page
 homepage: false
 ---
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-
 # Estadistica Multivariada Computacional
 Estadistica Multivariada Computacional 2019, basado en las clases de Mathias Bourel (IMERL).
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 # -1 Historia
 
