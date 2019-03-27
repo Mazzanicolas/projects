@@ -1,6 +1,6 @@
 ---
 layout: page
-homepage: true
+homepage: false
 ---
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 <style type="text/css">
@@ -33,36 +33,12 @@ homepage: true
 # Estadistica Multivariada Computacional
 Estadistica Multivariada Computacional 2019, basado en las clases de Mathias Bourel (IMERL).
 
-[EMC](./projects/estadistica-multivariada-computacional.md)
-
-# Índice
-
-[-1 Historia](#-1-Historia)
-
-[0 Tipos de aprendizaje automatizado](#0-Tipos-de-aprendizaje-automatizado)
-
-[0.1 Aprendizaje supervisado](#0.1-Aprendizaje-supervisado)
-
-[0.2 Aprendizaje no supervizado](#0.2-Aprendizaje-no-supervizado)
-
-[0.3 Aprendizaje por refuerzo](#0.3-Aprendizaje-por-refuerzo)
-
-[1 Bases de datos](#1-Bases-de-datos)
-
-[1.1 Bases de datos con etiqueta](#1.1-Bases-de-datos-con-etiqueta)
-
-[1.2 Bases de datos sin etiqueta](#1.2-Bases-de-datos-sin-etiqueta)
-
-[2 Aprendizaje automatizado](#2-Aprendizaje-automatizado)
-
-[2.1 Función de perdida](#2.1-Función-de-perdida)
-
-## -1 Historia
+# -1 Historia
 
 <iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=247437" frameborder="0" allowfullscreen></iframe>
 <div><a  style="font-size: 12px; text-decoration: none;" title="Powered by Time.Graphics" href="https://time.graphics">Powered by Time.Graphics</a></div>
 
-## 0 Tipos de aprendizaje automatizado
+# 0 Tipos de aprendizaje automatizado
 
 * Aprendizaje supervisado
 * Aprendizaje no supervizado
@@ -74,12 +50,12 @@ Estadistica Multivariada Computacional 2019, basado en las clases de Mathias Bou
 
 ## 0.3 Aprendizaje por refuerzo
 
-## 1 Bases de datos
+# 1 Bases de datos
 
 Las bases de datos también conocidas como *datasets*, FILL THIS HERE. 
 Podemos separarlas en dos tipos, bases de datos con etiqueta (o *label*) y sin etiquetar.
 
-## 1.1 Bases de datos con etiqueta
+# 1.1 Bases de datos con etiqueta
 
 Las bases de datos con etiqueta son utilizadas para el aprendizaje supervisado.
 
@@ -118,7 +94,7 @@ $$a_{i=1,\ \cdots,\ m} \in A,\  A=\{\ atributos\ \}$$
 
 $$x_{i=1,\ \cdots,\ n} \text{ es un vector con los valores de los atributos, }x_{i}\subset X$$
 
-## 2 Aprendizaje automatizado
+# 2 Aprendizaje automatizado
 
 El objetivo del aprendizaje supervisado
 
