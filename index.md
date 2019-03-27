@@ -1,6 +1,7 @@
 ---
 layout: page
 homepage: true
+title: Home
 ---
 
 # [Métodos de Aprendizaje Automatico](./projects/MAA.md)
