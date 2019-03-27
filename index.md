@@ -3,7 +3,7 @@ layout: page
 homepage: true
 ---
 
-# [Métodos de aprendizaje automatico](./projects/MAA.md)
+# [Métodos de Aprendizaje Automatico](./projects/MAA.md)
 Métodos de aprendizaje automatico (2018), basado en las clases de Gustavo Vazquez y Ernesto Ocampo (Universidad Católica del Uruguay).
 
 # [Aprendizaje Profundo para Visión Artificial](./projects/DLV.md)

@@ -3,34 +3,6 @@ layout: page
 homepage: false
 ---
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-<style type="text/css">
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-  }
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
-    font-style: italic, oblique;
-  }
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
-    font-weight: bold;
-    font-style: italic, oblique;
-  }
-
-  body {
-    font-family: "Computer Modern", sans-serif;
-  }
-</style>
-
 # Estadistica Multivariada Computacional
 Estadistica Multivariada Computacional 2019, basado en las clases de Mathias Bourel (IMERL).
 
