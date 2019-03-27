@@ -2,153 +2,165 @@
 layout: page
 homepage: true
 ---
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<style type="text/css">
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+    font-style: italic, oblique;
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+    font-weight: bold;
+    font-style: italic, oblique;
+  }
 
-# Overview
+  body {
+    font-family: "Computer Modern", sans-serif;
+  }
+</style>
 
-> This is a [Jekyll theme](https://github.com/allejo/jekyll-docs-theme) based on [mistic100's modification](https://github.com/mistic100/jekyll-bootstrap-doc) of the official Bootstrap documentation from a few years back.
+# Estadistica Multivariada Computacional
+Estadistica Multivariada Computacional 2019, basado en las clases de Mathias Bourel (IMERL).
 
-Jekyll Docs Theme is provided as a theme for writing documentation for your projects instead of having a single large README file or several markdown files stored in a not so user-friendly manner.
+# Índice
 
-This theme is still in development but is kept fairly stable; just note, there are a lot things yet to come.
+[-1 Historia](#-1-Historia)
 
-# Installation
+[0 Tipos de aprendizaje automatizado](#0-Tipos-de-aprendizaje-automatizado)
 
-Add this line to your Jekyll site's Gemfile:
+[0.1 Aprendizaje supervisado](#0.1-Aprendizaje-supervisado)
 
-```ruby
-gem "jekyll-docs-theme"
-```
+[0.2 Aprendizaje no supervizado](#0.2-Aprendizaje-no-supervizado)
 
-And add this line to your Jekyll site's _config.yml:
+[0.3 Aprendizaje por refuerzo](#0.3-Aprendizaje-por-refuerzo)
 
-```yaml
-theme: jekyll-docs-theme
-```
+[1 Bases de datos](#1-Bases-de-datos)
 
-And then execute:
+[1.1 Bases de datos con etiqueta](#1.1-Bases-de-datos-con-etiqueta)
 
-```
-$ bundle
-```
+[1.2 Bases de datos sin etiqueta](#1.2-Bases-de-datos-sin-etiqueta)
 
-Or install it yourself as:
+[2 Aprendizaje automatizado](#2-Aprendizaje-automatizado)
 
-```
-$ gem install jekyll-docs-theme
-```
+[2.1 Función de perdida](#2.1-Función-de-perdida)
 
-<div class="alert alert-warning" markdown="1">
-**Warning:** Custom [themes are not supported on GitHub Pages](https://pages.github.com/themes/) at the time of writing this, so you may either build your site on another platform or simply fork this repo and build upon it as you would any other theme.
-</div>
+## -1 Historia
 
-# Configuration Options
+<iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=247437" frameborder="0" allowfullscreen></iframe>
+<div><a  style="font-size: 12px; text-decoration: none;" title="Powered by Time.Graphics" href="https://time.graphics">Powered by Time.Graphics</a></div>
 
-A sample [`_config.yml`](https://github.com/allejo/jekyll-docs-theme/blob/master/docs/_config.yml) file is available with all of the available fields; documentation and more information for each of those fields is available below.
+## 0 Tipos de aprendizaje automatizado
 
-## Project
+* Aprendizaje supervisado
+* Aprendizaje no supervizado
+* *Aprendizaje por refuerzo*
 
-The project object can be specified with information related to the software this; this information will appear on the homepage's jumbotron area.
+## 0.1 Aprendizaje supervisado
 
-```yaml
-project:
-  version: 1.0.0
-  download_url: https://github.com/USER/PROJECT/releases
-```
+## 0.2 Aprendizaje no supervizado
 
-{:.table}
-| field | description |
-| ----- | ----------- |
-| `version` | The current version of the software |
-| `download_url` | The URL to the current download |
+## 0.3 Aprendizaje por refuerzo
 
-## Licenses
+## 1 Bases de datos
 
-The license object accepts four fields regarding information about the licensing of your software and documentation.
+Las bases de datos también conocidas como *datasets*, FILL THIS HERE. 
+Podemos separarlas en dos tipos, bases de datos con etiqueta (o *label*) y sin etiquetar.
 
-```yaml
-license:
-  software: MIT License
-  software_url: http://opensource.org/licenses/MIT
+## 1.1 Bases de datos con etiqueta
 
-  docs: CC BY 3.0
-  docs_url: http://creativecommons.org/licenses/by/3.0/
-```
+Las bases de datos con etiqueta son utilizadas para el aprendizaje supervisado.
 
-{:.table}
-| field | description |
-| ----- | ----------- |
-| `software` | The license the software is distributed under |
-| `software_url` | A URL to the license text for the license specified in `software` |
-| `docs` | The license this documentation is distributed under |
-| `docs_url` | A URL to the license text for the license specified in `docs` |
+|$$a_{1}$$|$$a_{2}$$|$$a_{3}$$|$$\cdots$$|$$a_{m}$$|$$y$$|
+|-|-|-|-|-|-|
+|||$$x_{1}$$|||$$y_{1}$$|
+|||$$x_{2}$$|||$$y_{2}$$|
+|||$$x_{2}$$|||$$y_{3}$$|
+|||$$\vdots$$|||$$\vdots$$|
+|||$$x_{n}$$|||$$y_{n}$$|
 
-## Links
+$$a_{i=1,\ \cdots,\ m} \in A,\  A=\{\ atributos\ \}$$
 
-The links object has two subobjects, `header` and `footer`; both of these objects accept an array of elements with a `title` and `url`. The links defined in the `header` object will appear in the navigation of the website and the links in the `footer` will appear at the bottom of the website.
+$$x_{i=1,\ \cdots,\ n} \text{ es un vector con los valores de los atributos, }x_{i}\subset X \text{, } X \text{ son las características explicativas.}$$
 
-```yaml
-links:
-  header:
-    - title: GitHub
-      url: https://github.com/allejo/jekyll-docs-theme
-  footer:
-    - title: GitHub
-      url: https://github.com/allejo/jekyll-docs-theme
-    - title: Issues
-      url: https://github.com/allejo/jekyll-docs-theme/issues?state=open
-```
+$$y_{i=1,\ \cdots,\ n} \text{ es la variable independiente a predecir }\in Y \text{, puede ser una categoría o un valor continuo }\in \mathbb{R}$$
 
-{:.table}
-| field | description |
-| ----- | ----------- |
-| `title` | The textual representation of the URL |
-| `url` | The URL of the link |
+$$\text{Podemos describir a la base de datos como } \{(x_{1},y_{1}),(x_{2},y_{2}),\cdots ,(x_{n},y_{n})\} $$
+$$ \forall_{i=1,\ \cdots,\ n}\ (x_{i},y_{i}) \text{ es una relación de la variable aleatoria multidimensional } (x,y)$$
 
-## UI
+$$ \text{El objetivo del aprendizaje automatizado supervisado es encontrar } f: X\rightarrow Y$$
 
-The ui object will contain all the settings in regards to the aesthetics of the website
+## 1.2 Bases de datos sin etiqueta
 
-```yaml
-ui:
-  header:
-    color1: "#080331"
-    color2: "#673051"
-    trianglify: true
-```
+Las bases de datos con etiqueta son utilizadas para el aprendizaje no supervisado.
 
-{:.table}
-| field | description |
-| ----- | ----------- |
-| `color1` & `color2` | The two colors that will create the gradient of the page header |
-| `trianglify` | When set to true, the page header will be a generated triangular pattern |
+|$$a_{1}$$|$$a_{2}$$|$$a_{3}$$|$$\cdots$$|$$a_{m}$$|
+|-|-|-|-|-|
+|||$$x_{1}$$|||
+|||$$x_{2}$$|||
+|||$$x_{2}$$|||
+|||$$\vdots$$|||
+|||$$x_{n}$$|||
 
-## Analytics
+$$a_{i=1,\ \cdots,\ m} \in A,\  A=\{\ atributos\ \}$$ 
 
-```yaml
-analytics:
-    google: UA-123456-1
-```
+$$x_{i=1,\ \cdots,\ n} \text{ es un vector con los valores de los atributos, }x_{i}\subset X$$
 
-{:.table}
-| field | description |
-| ----- | ----------- |
-| `google` | The unique identifier for Google Analytics; typically looks like `U-123456-1`
+## 2 Aprendizaje automatizado
 
-## Social
+El objetivo del aprendizaje supervisado
 
-Options for configuring buttons to "like", "tweet" or "star" this site with the respective social media websites.
+## 2.1 Función de perdida
 
-```yaml
-social:
-  github:
-    user: allejo
-    repo: jekyll-docs-theme
-  twitter:
-    enabled: false
-    via:
-    hash:
-    account:
-  facebook:
-    enabled: false
-    profileUrl:
-```
+$$ \text{La función } L(y,u) \text{ cuantifica cual es la perdida de decir } u \text{ cuando el verdadero valor es } y$$
+
+Algunos ejemplos de funciones de error para diferentes problemas:
+
+* $$ \text{Clasificación: } L(y,u)=\mathbb{1_{\{u\neq y\}}} \left\{\begin{matrix} 1 & si & u\neq y\\  0 & si & u=y \end{matrix}\right.$$ 
+
+* $$ \text{Regresión: } L(y,u)=(y-u)^2$$
+
+* $$ \text{ No supervisado: } L(u)=-log(u)  \text{(verosimilitud)}$$
+
+$$ \text{ Quiero encontrar una función } f \text{ que minimiza el "riesgo de perder" } $$
+
+### Función de riesgo teórica:
+
+$$R_{L}(f)=\mathbb{E}[L(y,f(x))]$$
+
+$$ \text{De donde } \mathbb{E} \text{ es la esperanza y } L(y,f(x)) \text{ es la perdida, por lo tanto: }$$
+
+$$f_{C}=ar\underset{f}gmin \ R_{L}(f)= ar\underset{f}gmin \ \mathbb{E}[L(y,f(x))]$$
+
+$$ \text{Buscamos } f \text{ tal que minimiza la función.}$$
+
+Como ejemplo podemos pensar una regresión lineal simple en la que buscamos la recta perteneciente al conjunto $$C$$ de polinomios de grado uno.
+
+![F](./img/ffc.png)
+
+Donde $$f$$ es la mejor función (no la conozco y no la voy a conocer) y $$f_{C}$$ es la función que minimiza el error teórico. 
+El problema con este planteamiento es que la esperanza depende de la distribución de la variable aleatoria que no la tenemos por lo que $$f_{C}$$ no la voy a conocer.
+
+Como esto no se puede resolver vamos a utilizar los datos. En vez de minimizar el riesgo teórico voy a querer encontrar una función que minimice el riesgo empírico:
+
+$$R_{L,n}(f)=\frac{1}{n}\sum_{n}^{i=1}L(y_{i},f(x_{i}))$$
+
+Esto lo puedo encontrar porque conozco la función de perdida y los datos.
+
+$$ \hat{f_{n}}=ar\underset{f}g\underset{\in}m\underset{C}in\ R_{L,n}(f)=ar\underset{f}g\underset{\in}m\underset{C}in\ \frac{1}{n}\sum_{n}^{i=1}L(y_{i},f(x_{i}))$$
+
+![F](./img/ffcfn.png)
+
+Cuantos más datos se tienen el riesgo empírico $$f_{n}$$ se aproxima más al teórico $$f_{c}$$
+
+$$ar\underset{f}g\underset{\in}m\underset{C}in\ \frac{1}{n} \sum^{n}_{i=1}\ \mathbb{1}(y_{i}, f(x_{i}))$$
