@@ -34,6 +34,7 @@ Podemos separarlas en dos tipos, bases de datos con etiqueta (o *label*) y sin e
 
 Las bases de datos con etiqueta son utilizadas para el aprendizaje supervisado.
 
+{:.table}
 |$$a_{1}$$|$$a_{2}$$|$$a_{3}$$|$$\cdots$$|$$a_{m}$$|$$y$$|
 |-|-|-|-|-|-|
 |||$$x_{1}$$|||$$y_{1}$$|
@@ -57,6 +58,7 @@ $$ \text{El objetivo del aprendizaje automatizado supervisado es encontrar } f: 
 
 Las bases de datos con etiqueta son utilizadas para el aprendizaje no supervisado.
 
+{:.table}
 |$$a_{1}$$|$$a_{2}$$|$$a_{3}$$|$$\cdots$$|$$a_{m}$$|
 |-|-|-|-|-|
 |||$$x_{1}$$|||
@@ -79,13 +81,19 @@ $$ \text{La función } L(y,u) \text{ cuantifica cual es la perdida de decir } u 
 
 Algunos ejemplos de funciones de error para diferentes problemas:
 
-* $$ \text{Clasificación: } L(y,u)=\mathbb{1_{\{u\neq y\}}} \left\{\begin{matrix} 1 & si & u\neq y\\  0 & si & u=y \end{matrix}\right.$$ 
+* Clasificación: 
+  
+  $$L(y,u)=\mathbb{1_{\{u\neq y\}}} \left\{\begin{matrix} 1 & si & u\neq y\\  0 & si & u=y \end{matrix}\right.$$ 
 
-* $$ \text{Regresión: } L(y,u)=(y-u)^2$$
+* Regresión:
+ 
+ $$ L(y,u)=(y-u)^2$$
 
-* $$ \text{ No supervisado: } L(u)=-log(u)  \text{(verosimilitud)}$$
+* No supervisado: 
 
-$$ \text{ Quiero encontrar una función } f \text{ que minimiza el "riesgo de perder" } $$
+  $$L(u)=-log(u)  \text{(verosimilitud)}$$
+
+Quiero encontrar una función $$f$$ que minimiza el "riesgo de perder".
 
 ### Función de riesgo teórica:
 
@@ -99,7 +107,7 @@ $$ \text{Buscamos } f \text{ tal que minimiza la función.}$$
 
 Como ejemplo podemos pensar una regresión lineal simple en la que buscamos la recta perteneciente al conjunto $$C$$ de polinomios de grado uno.
 
-![F](./img/ffc.png)
+![F](./emc_resources/img/ffc.png)
 
 Donde $$f$$ es la mejor función (no la conozco y no la voy a conocer) y $$f_{C}$$ es la función que minimiza el error teórico. 
 El problema con este planteamiento es que la esperanza depende de la distribución de la variable aleatoria que no la tenemos por lo que $$f_{C}$$ no la voy a conocer.
@@ -112,7 +120,7 @@ Esto lo puedo encontrar porque conozco la función de perdida y los datos.
 
 $$ \hat{f_{n}}=ar\underset{f}g\underset{\in}m\underset{C}in\ R_{L,n}(f)=ar\underset{f}g\underset{\in}m\underset{C}in\ \frac{1}{n}\sum_{n}^{i=1}L(y_{i},f(x_{i}))$$
 
-![F](./img/ffcfn.png)
+![F](./emc_resources/img/ffcfn.png)
 
 Cuantos más datos se tienen el riesgo empírico $$f_{n}$$ se aproxima más al teórico $$f_{c}$$
 

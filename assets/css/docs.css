@@ -5,7 +5,7 @@
  * details, see http://creativecommons.org/licenses/by/3.0/.
  */
 
-body {
+ body {
     position: relative
 }
 
@@ -297,7 +297,7 @@ body {
     width: auto !important;
     height: auto !important;
     margin-left: 145px !important;
-    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important
 }
 
 .carbonad-text {
@@ -1134,8 +1134,8 @@ h1[id] {
 }
 
 .bs-customizer input[type=text] {
-    /*font-family: Menlo, Monaco, Consolas, "Courier New", monospace;*/
-    background-color: #c52c2c
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    background-color: #fafafa
 }
 
 .bs-customizer .help-block {
@@ -1525,28 +1525,3 @@ h1[id] {
 .css .o, .css .o+.nt, .css .nt+.nt {
     color: #999
 }
-
-@font-face {
-    font-family: computerModern;
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-  }
-  @font-face {
-    font-family: computerModern;
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: computerModern;
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
-    font-style: italic, oblique;
-  }
-  @font-face {
-    font-family: computerModern;
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
-    font-weight: bold;
-    font-style: italic, oblique;
-  }
-
-  body {
-    font-family: computerModern, sans-serif;
-  }

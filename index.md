@@ -1,13 +1,19 @@
 ---
 layout: page
 homepage: true
-title: Home
+title: Projects
 ---
 
-<p style="font-family: computerModern;">
+
+```
 “Challenges are what make life interesting and overcoming them is what makes life meaningful.”
+```
 <span style="text-align: center; font-weight: bold;display: block;">-Joshua J. Marine</span>
-</p>
+
+<br>
+<br>
+<br>
+
 # [Métodos de Aprendizaje Automatico](./projects/MAA.md)
 Métodos de aprendizaje automatico (2018), basado en las clases de Gustavo Vazquez y Ernesto Ocampo (Universidad Católica del Uruguay).
 
