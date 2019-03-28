@@ -5,15 +5,6 @@ title: Projects
 ---
 
 
-```
-“Challenges are what make life interesting and overcoming them is what makes life meaningful.”
-```
-<span style="text-align: center; font-weight: bold;display: block;">-Joshua J. Marine</span>
-
-<br>
-<br>
-<br>
-
 # [Métodos de Aprendizaje Automatico](./projects/MAA.md)
 Métodos de aprendizaje automatico (2018), basado en las clases de Gustavo Vazquez y Ernesto Ocampo (Universidad Católica del Uruguay).
 
@@ -25,3 +16,15 @@ Aprendizaje Profundo por Refuerzo (2019), basado en las clases de Pablo Sprechma
 
 # [Estadistica Multivariada Computacional](./projects/EMC.md)
 Estadistica Multivariada Computacional (2019), basado en las clases de Mathias Bourel (Instituto de Matemática y Estadistica (IMERL), UdelaR).
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+```
+“Challenges are what make life interesting and overcoming them is what makes life meaningful.”
+```
+<span style="text-align: center; font-weight: bold;display: block;">-Joshua J. Marine</span>
+
