@@ -13,24 +13,24 @@ Estadistica Multivariada Computacional 2019, basado en las clases de Mathias Bou
 <iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=247437" frameborder="0" allowfullscreen></iframe>
 <div><a  style="font-size: 12px; text-decoration: none;" title="Powered by Time.Graphics" href="https://time.graphics">Powered by Time.Graphics</a></div>
 
-# 1 Tipos de aprendizaje automatizado
+# 2 Tipos de aprendizaje automatizado
 
 * Aprendizaje supervisado
 * Aprendizaje no supervizado
 * *Aprendizaje por refuerzo*
 
-## 1.1 Aprendizaje supervisado
+## 2.1 Aprendizaje supervisado
 
-## 1.2 Aprendizaje no supervizado
+## 2.2 Aprendizaje no supervizado
 
-## 1.3 Aprendizaje por refuerzo
+## 2.3 Aprendizaje por refuerzo
 
-# 2 Bases de datos
+# 3 Bases de datos
 
 Las bases de datos también conocidas como *datasets*, FILL THIS HERE. 
 Podemos separarlas en dos tipos, bases de datos con etiqueta (o *label*) y sin etiquetar.
 
-## 2.1 Bases de datos con etiqueta
+## 3.1 Bases de datos con etiqueta
 
 Las bases de datos con etiqueta son utilizadas para el aprendizaje supervisado.
 
@@ -59,8 +59,20 @@ El objetivo del aprendizaje automatizado supervisado es encontrar:
 
 $$f: X\rightarrow Y$$
 
+[Ejemplo Wages Dataset (Kaggle)]([./](https://www.kaggle.com/ljanjughazyan/wages/kernels))
 
-## 2.2 Bases de datos sin etiqueta
+{:.table}
+|Height|Sex   |Race |Ed|Age|Earn      |
+|------|------|-----|--|---|----------|
+|73.89 |male  |white|16|49 |79571.2990|
+|66.23 |female|white|16|62 |96396.9886|
+|63.77 |female|white|16|33 |48710.6669|
+|63.22 |female|other|16|95 |80478.0961|
+|63.08 |female|white|17|43 |82089.3455|
+
+En este ejemplo $$x_{1}=(73.89\text{, male, white, }16\text{, }49)$$ mientras que $$y_{1}=79571.2990$$
+
+## 3.2 Bases de datos sin etiqueta
 
 Las bases de datos con etiqueta son utilizadas para el aprendizaje no supervisado.
 
@@ -77,11 +89,11 @@ $$a_{i=1,\ \cdots,\ m} \in A,\  A=\{\ atributos\ \}$$
 
 $$x_{i=1,\ \cdots,\ n} \text{ es un vector con los valores de los atributos, }x_{i}\subset X$$
 
-# 3 Aprendizaje automatizado
+# 4 Aprendizaje automatizado
 
 El objetivo del aprendizaje supervisado
 
-## 3.1 Función de perdida
+## 4.1 Función de perdida
 
 La función $$L(y,u)$$ cuantifica cual es la perdida de decir $$u$$ cuando el verdadero valor es $$y$$
 
@@ -101,7 +113,7 @@ Algunos ejemplos de funciones de error para diferentes problemas:
 
 Quiero encontrar una función $$f$$ que minimiza el "riesgo de perder".
 
-## 3.2 Función de riesgo teórica:
+## 4.2 Función de riesgo teórica:
 
 $$R_{L}(f)=\mathbb{E}[L(y,f(x))]$$
 
