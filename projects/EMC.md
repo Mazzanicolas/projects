@@ -105,11 +105,11 @@ Donde $$f$$ es una función desconocida y $$\epsilon$$ es el error (independient
 
 ![TV Sales](./emc_resources/img/tv-sales.png)
 
-<button onclick="showHide()" style="background-color: #555555;border: none;color: white;padding: 8px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 15px;">Show R code</button>
+<button onclick="showHide('TVSalesRCode')" style="background-color: #555555;border: none;color: white;padding: 5px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 14px;">Ver código en R</button>
 
 <div id="TVSalesRCode" style="display: none; background-color: #555555;border-radius:5px;">
-<p style="padding:15px; font-family:'Courier New', Courier, monospac">
-    dataset = <font color="orange">read.csv</font>(<font color="lightgreen">'./path_to_file.csv'</font>)<br>
+<p style="padding:15px; font-family:'Courier New', Courier, monospac; color:white;">
+    dataset = <font color="orange">read.csv</font>(<a href='http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv'>'./path_to_file.csv'</a>)<br>
     <font color="orange">attach</font>(dataset)<br>
     <font color="orange">plot</font>(TV, sales, type='p', col='darkorchid3', pch=16)<br>
 </p>
@@ -118,6 +118,26 @@ Donde $$f$$ es una función desconocida y $$\epsilon$$ es el error (independient
 
 ```
 En este gráfico se muestra la cantidad de ventas (Y) respecto a la cantidad de dinero invertido en publicidad para la TV (X).
+```
+
+
+![TV Sales](./emc_resources/img/tv-sales-fit.png)
+
+<button onclick="showHide('TVSalesFitRCode')" style="background-color: #555555;border: none;color: white;padding: 5px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 14px;">Ver código en R</button>
+
+<div id="TVSalesFitRCode" style="display: none; background-color: #555555;border-radius:5px;">
+<p style="padding:15px; font-family:'Courier New', Courier, monospac; color:white;">
+    dataset = <font color="orange">read.csv</font>(<a href='http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv'>'./path_to_file.csv'</a>)<br>
+    <font color="orange">attach</font>(dataset)<br>
+    <font color="orange">plot</font>(TV, sales, type='p', col='darkorchid3', pch=16)<br>
+    model <- <font color="orange">lm</font>(sales ~ TV)<br>
+    <font color="orange">abline</font>(model, lwd=5, col='firebrick1')<br>
+</p>
+</div>
+
+
+```
+Este es el gráfico resultante al calcular los mínimos cuadrados.
 ```
 
 ## 4.1 Función de perdida
@@ -173,4 +193,4 @@ $$ar\underset{f}g\underset{\in}m\underset{C}in\ \frac{1}{n} \sum^{n}_{i=1}\ \mat
 
 
 
-<script>function showHide() {var x = document.getElementById("TVSalesRCode");if (x.style.display==="none"){x.style.display="block";}else{x.style.display="none";}}</script>
+<script>function showHide(item) {var x = document.getElementById(item);if (x.style.display==="none"){x.style.display="block";}else{x.style.display="none";}}</script>
