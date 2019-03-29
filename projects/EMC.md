@@ -59,7 +59,7 @@ El objetivo del aprendizaje automatizado supervisado es encontrar:
 
 $$f: X\rightarrow Y$$
 
-[Ejemplo Wages Dataset (Kaggle)]([./](https://www.kaggle.com/ljanjughazyan/wages/kernels))
+[Ejemplo Wages Dataset (Kaggle)](https://www.kaggle.com/ljanjughazyan/wages/kernels)
 
 {:.table}
 |Height|Sex   |Race |Ed|Age|Earn      |
@@ -71,6 +71,8 @@ $$f: X\rightarrow Y$$
 |63.08 |female|white|17|43 |82089.3455|
 
 En este ejemplo $$x_{1}=(73.89\text{, male, white, }16\text{, }49)$$ mientras que $$y_{1}=79571.2990$$
+
+Podemos observar que la variable $$y\ \in \mathbb{R}$$, por lo que es un problema de regresión.
 
 ## 3.2 Bases de datos sin etiqueta
 
@@ -87,11 +89,36 @@ Las bases de datos con etiqueta son utilizadas para el aprendizaje no supervisad
 
 $$a_{i=1,\ \cdots,\ m} \in A,\  A=\{\ atributos\ \}$$ 
 
-$$x_{i=1,\ \cdots,\ n} \text{ es un vector con los valores de los atributos, }x_{i}\subset X$$
+$$x_{i=1,\ \cdots,\ n}$$ es un vector con los valores de los atributos, $$x_{i}\subset X$$
 
 # 4 Aprendizaje automatizado
 
-El objetivo del aprendizaje supervisado
+Como menocionamos anteriormente, el objetivo del aprendizaje supervisado es encontrar: 
+
+$$f: X\rightarrow Y$$
+
+para esto asumimos que existe una relación entre $$Y$$ y $$X=\{x_{1},\ x_{2},\ \cdots,\ x_{m}\}$$ la cual podemos representar de forma general como:
+
+$$Y=f(x)+ \epsilon$$
+
+Donde $$f$$ es una función desconocida y $$\epsilon$$ es el error (independiente de $$X$$ y con $$\mu =0$$, media 0)
+
+![TV Sales](./emc_resources/img/tv-sales.png)
+
+<button onclick="showHide()" style="background-color: #555555;border: none;color: white;padding: 8px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 15px;">Show R code</button>
+
+<div id="TVSalesRCode">
+```
+dataset = read.csv('./_.csv')
+attach(dataset)
+plot(TV, sales, type='p', col='darkorchid3', pch=16)
+```
+</div>
+
+
+```
+En este gráfico se muestra la cantidad de ventas (Y) respecto a la cantidad de dinero invertido en publicidad para la TV (X).
+```
 
 ## 4.1 Función de perdida
 
@@ -143,3 +170,16 @@ $$ \hat{f_{n}}=ar\underset{f}g\underset{\in}m\underset{C}in\ R_{L,n}(f)=ar\under
 Cuantos más datos se tienen el riesgo empírico $$f_{n}$$ se aproxima más al teórico $$f_{c}$$
 
 $$ar\underset{f}g\underset{\in}m\underset{C}in\ \frac{1}{n} \sum^{n}_{i=1}\ \mathbb{1}(y_{i}, f(x_{i}))$$
+
+
+
+<script>
+function showHide() {
+  var x = document.getElementById("TVSalesRCode");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
