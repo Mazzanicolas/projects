@@ -45,14 +45,17 @@ Las bases de datos con etiqueta son utilizadas para el aprendizaje supervisado.
 
 $$a_{i=1,\ \cdots,\ m} \in A,\  A=\{\ atributos\ \}$$
 
-$$x_{i=1,\ \cdots,\ n} \text{ es un vector con los valores de los atributos, }x_{i}\subset X \text{, } X \text{ son las características explicativas.}$$
+$$x_{i=1,\ \cdots,\ n}$$  es un vector con los valores de los atributos, $$x_{i}\subset X$$, $$X$$  son las características explicativas.
 
-$$y_{i=1,\ \cdots,\ n} \text{ es la variable independiente a predecir }\in Y \text{, puede ser una categoría o un valor continuo }\in \mathbb{R}$$
+$$y_{i=1,\ \cdots,\ n}$$ es la variable independiente a predecir $$\in Y$$, puede ser una categoría o un valor continuo $$\in \mathbb{R}$$
 
-$$\text{Podemos describir a la base de datos como } \{(x_{1},y_{1}),(x_{2},y_{2}),\cdots ,(x_{n},y_{n})\} $$
-$$ \forall_{i=1,\ \cdots,\ n}\ (x_{i},y_{i}) \text{ es una relación de la variable aleatoria multidimensional } (x,y)$$
+Podemos describir a la base de datos como :
+$$\{(x_{1},y_{1}),(x_{2},y_{2}),\cdots ,(x_{n},y_{n})\} $$
 
-$$ \text{El objetivo del aprendizaje automatizado supervisado es encontrar } f: X\rightarrow Y$$
+$$ \forall_{i=1,\ \cdots,\ n}\ (x_{i},y_{i})$$ es una relación de la variable aleatoria multidimensional $$(x,y)$$
+
+El objetivo del aprendizaje automatizado supervisado es encontrar: 
+$$f: X\rightarrow Y$$
 
 ## 1.2 Bases de datos sin etiqueta
 
