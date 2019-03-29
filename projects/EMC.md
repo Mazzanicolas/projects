@@ -50,12 +50,15 @@ $$x_{i=1,\ \cdots,\ n}$$  es un vector con los valores de los atributos, $$x_{i}
 $$y_{i=1,\ \cdots,\ n}$$ es la variable independiente a predecir $$\in Y$$, puede ser una categoría o un valor continuo $$\in \mathbb{R}$$
 
 Podemos describir a la base de datos como :
+
 $$\{(x_{1},y_{1}),(x_{2},y_{2}),\cdots ,(x_{n},y_{n})\} $$
 
 $$ \forall_{i=1,\ \cdots,\ n}\ (x_{i},y_{i})$$ es una relación de la variable aleatoria multidimensional $$(x,y)$$
 
 El objetivo del aprendizaje automatizado supervisado es encontrar: 
+
 $$f: X\rightarrow Y$$
+
 
 ## 1.2 Bases de datos sin etiqueta
 
@@ -80,7 +83,7 @@ El objetivo del aprendizaje supervisado
 
 ## 2.1 Función de perdida
 
-$$ \text{La función } L(y,u) \text{ cuantifica cual es la perdida de decir } u \text{ cuando el verdadero valor es } y$$
+La función $$L(y,u)$$ cuantifica cual es la perdida de decir $$u$$ cuando el verdadero valor es $$y$$
 
 Algunos ejemplos de funciones de error para diferentes problemas:
 
@@ -102,11 +105,11 @@ Quiero encontrar una función $$f$$ que minimiza el "riesgo de perder".
 
 $$R_{L}(f)=\mathbb{E}[L(y,f(x))]$$
 
-$$ \text{De donde } \mathbb{E} \text{ es la esperanza y } L(y,f(x)) \text{ es la perdida, por lo tanto: }$$
+Donde $$\mathbb{E}$$ es la esperanza y $$L(y,f(x))$$ es la perdida, por lo tanto: 
 
 $$f_{C}=ar\underset{f}gmin \ R_{L}(f)= ar\underset{f}gmin \ \mathbb{E}[L(y,f(x))]$$
 
-$$ \text{Buscamos } f \text{ tal que minimiza la función.}$$
+Buscamos $$f$$ tal que minimiza la función.
 
 Como ejemplo podemos pensar una regresión lineal simple en la que buscamos la recta perteneciente al conjunto $$C$$ de polinomios de grado uno.
 
