@@ -107,11 +107,11 @@ Donde $$f$$ es una función desconocida y $$\epsilon$$ es el error (independient
 
 <button onclick="showHide()" style="background-color: #555555;border: none;color: white;padding: 8px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 15px;">Show R code</button>
 
-<div id="TVSalesRCode" style="display: none;">
-<p>
-    dataset = <font color="orange">read.csv</font> (<font color="green">'./path_to_file.csv'</font>)<br>
-    <font color="orange">attach</font> (dataset)<br>
-    <font color="orange">plot</font> (TV, sales, type='p', col='darkorchid3', pch=16)<br>
+<div id="TVSalesRCode" style="display: none; background-color: #555555;border-radius:5px;">
+<p style="padding:15px; font-family:'Courier New', Courier, monospac">
+    dataset = <font color="orange">read.csv</font>(<font color="lightgreen">'./path_to_file.csv'</font>)<br>
+    <font color="orange">attach</font>(dataset)<br>
+    <font color="orange">plot</font>(TV, sales, type='p', col='darkorchid3', pch=16)<br>
 </p>
 </div>
 
