@@ -140,6 +140,8 @@ En este gráfico se muestra la cantidad de ventas (Y) respecto a la cantidad de 
 Este es el gráfico resultante al calcular los mínimos cuadrados.
 ```
 
+Podemos ver que $$\mu(\epsilon) \approx 0$$.
+
 ## 4.1 Función de perdida
 
 La función $$L(y,u)$$ cuantifica cual es la perdida de decir $$u$$ cuando el verdadero valor es $$y$$
