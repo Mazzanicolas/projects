@@ -107,12 +107,12 @@ Donde $$f$$ es una función desconocida y $$\epsilon$$ es el error (independient
 
 <button onclick="showHide()" style="background-color: #555555;border: none;color: white;padding: 8px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 15px;">Show R code</button>
 
-<div id="TVSalesRCode">
-```
-dataset = read.csv('./_.csv')
-attach(dataset)
-plot(TV, sales, type='p', col='darkorchid3', pch=16)
-```
+<div id="TVSalesRCode" style="display: none;">
+<p>
+    dataset = <font color="orange">read.csv</font> (<font color="green">'./path_to_file.csv'</font>)<br>
+    <font color="orange">attach</font> (dataset)<br>
+    <font color="orange">plot</font> (TV, sales, type='p', col='darkorchid3', pch=16)<br>
+</p>
 </div>
 
 
@@ -173,13 +173,4 @@ $$ar\underset{f}g\underset{\in}m\underset{C}in\ \frac{1}{n} \sum^{n}_{i=1}\ \mat
 
 
 
-<script>
-function showHide() {
-  var x = document.getElementById("TVSalesRCode");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
+<script>function showHide() {var x = document.getElementById("TVSalesRCode");if (x.style.display==="none"){x.style.display="block";}else{x.style.display="none";}}</script>
