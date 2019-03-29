@@ -4,6 +4,7 @@ homepage: false
 ---
 
 # Estadistica Multivariada Computacional
+
 Estadistica Multivariada Computacional 2019, basado en las clases de Mathias Bourel (IMERL).
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
@@ -16,12 +17,12 @@ Estadistica Multivariada Computacional 2019, basado en las clases de Mathias Bou
 # 2 Tipos de aprendizaje automatizado
 
 * Aprendizaje supervisado
-* Aprendizaje no supervizado
+* Aprendizaje no supervisado
 * *Aprendizaje por refuerzo*
 
 ## 2.1 Aprendizaje supervisado
 
-## 2.2 Aprendizaje no supervizado
+## 2.2 Aprendizaje no supervisado
 
 ## 2.3 Aprendizaje por refuerzo
 
@@ -93,7 +94,7 @@ $$x_{i=1,\ \cdots,\ n}$$ es un vector con los valores de los atributos, $$x_{i}\
 
 # 4 Aprendizaje automatizado
 
-Como menocionamos anteriormente, el objetivo del aprendizaje supervisado es encontrar: 
+Como mencionamos anteriormente, el objetivo del aprendizaje supervisado es encontrar: 
 
 $$f: X\rightarrow Y$$
 
@@ -140,7 +141,15 @@ En este gráfico se muestra la cantidad de ventas (Y) respecto a la cantidad de 
 Este es el gráfico resultante al calcular los mínimos cuadrados.
 ```
 
-Podemos ver que $$\mu(\epsilon) \approx 0$$.
+Podemos ver que algunas observaciones están sobre la linea mientras que otras están por debajo. En promedio tenemos $$\mu(\epsilon) \approx 0$$.
+
+En esta situación, como $$\mu(\epsilon) \approx 0$$ podemos predecir $$Y$$ usando:
+
+$$\hat{Y}=\hat{f}(X)$$ 
+
+Donde $$\hat{Y}$$ es una predicción de $$Y$$ y $$\hat{f}(X)$$ es una estimación de $$f$$.
+
+La precisión de $$\hat{Y}$$ respecto de $$Y$$ depende de dos cantidades, el error reducible y el error irreducible. La función $$\hat{f}(X)$$ no va a ser una estimación perfecta de $$f$$ y esto va a introducir un error. Este error es reducible porque podemos seleccionar un mejor modelo para representar $$f$$, por otro lado $$Y$$ es una función de $$\epsilon$$ por lo que la variabilidad asociada con $$\epsilon$$ también afecta la precisión del modelo. A esto se le llama el error irreducible, no importa que tan bien estimemos $$f$$ no vamos a poder reducir el error que introduce $$\epsilon$$.
 
 ## 4.1 Función de perdida
 
