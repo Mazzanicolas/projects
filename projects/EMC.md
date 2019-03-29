@@ -8,29 +8,29 @@ Estadistica Multivariada Computacional 2019, basado en las clases de Mathias Bou
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
-# -1 Historia
+# 1 Historia
 
 <iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=247437" frameborder="0" allowfullscreen></iframe>
 <div><a  style="font-size: 12px; text-decoration: none;" title="Powered by Time.Graphics" href="https://time.graphics">Powered by Time.Graphics</a></div>
 
-# 0 Tipos de aprendizaje automatizado
+# 1 Tipos de aprendizaje automatizado
 
 * Aprendizaje supervisado
 * Aprendizaje no supervizado
 * *Aprendizaje por refuerzo*
 
-## 0.1 Aprendizaje supervisado
+## 1.1 Aprendizaje supervisado
 
-## 0.2 Aprendizaje no supervizado
+## 1.2 Aprendizaje no supervizado
 
-## 0.3 Aprendizaje por refuerzo
+## 1.3 Aprendizaje por refuerzo
 
-# 1 Bases de datos
+# 2 Bases de datos
 
 Las bases de datos también conocidas como *datasets*, FILL THIS HERE. 
 Podemos separarlas en dos tipos, bases de datos con etiqueta (o *label*) y sin etiquetar.
 
-# 1.1 Bases de datos con etiqueta
+## 2.1 Bases de datos con etiqueta
 
 Las bases de datos con etiqueta son utilizadas para el aprendizaje supervisado.
 
@@ -60,7 +60,7 @@ El objetivo del aprendizaje automatizado supervisado es encontrar:
 $$f: X\rightarrow Y$$
 
 
-## 1.2 Bases de datos sin etiqueta
+## 2.2 Bases de datos sin etiqueta
 
 Las bases de datos con etiqueta son utilizadas para el aprendizaje no supervisado.
 
@@ -77,11 +77,11 @@ $$a_{i=1,\ \cdots,\ m} \in A,\  A=\{\ atributos\ \}$$
 
 $$x_{i=1,\ \cdots,\ n} \text{ es un vector con los valores de los atributos, }x_{i}\subset X$$
 
-# 2 Aprendizaje automatizado
+# 3 Aprendizaje automatizado
 
 El objetivo del aprendizaje supervisado
 
-## 2.1 Función de perdida
+## 3.1 Función de perdida
 
 La función $$L(y,u)$$ cuantifica cual es la perdida de decir $$u$$ cuando el verdadero valor es $$y$$
 
@@ -101,7 +101,7 @@ Algunos ejemplos de funciones de error para diferentes problemas:
 
 Quiero encontrar una función $$f$$ que minimiza el "riesgo de perder".
 
-### Función de riesgo teórica:
+## 3.2 Función de riesgo teórica:
 
 $$R_{L}(f)=\mathbb{E}[L(y,f(x))]$$
 
