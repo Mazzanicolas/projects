@@ -151,7 +151,15 @@ Donde $$\hat{Y}$$ es una predicción de $$Y$$ y $$\hat{f}(X)$$ es una estimació
 
 La precisión de $$\hat{Y}$$ respecto de $$Y$$ depende de dos cantidades, el error reducible y el error irreducible. La función $$\hat{f}(X)$$ no va a ser una estimación perfecta de $$f$$ y esto va a introducir un error. Este error es reducible porque podemos seleccionar un mejor modelo para representar $$f$$, por otro lado $$Y$$ es una función de $$\epsilon$$ por lo que la variabilidad asociada con $$\epsilon$$ también afecta la precisión del modelo. A esto se le llama el error irreducible, no importa que tan bien estimemos $$f$$ no vamos a poder reducir el error que introduce $$\epsilon$$.
 
-## 4.1 Función de perdida
+## 4.1 Estimación de $$f$$
+
+Nuestro objetivo es aplicar métodos para estimar la función $$f$$, es decir, encontrar una función tal que:
+
+$$Y \approx \hat{f}(X)$$
+
+Para cualquier observación $$(X, Y)$$
+
+## 4.2 Función de perdida
 
 La función $$L(y,u)$$ cuantifica cual es la perdida de decir $$u$$ cuando el verdadero valor es $$y$$
 
@@ -171,7 +179,7 @@ Algunos ejemplos de funciones de error para diferentes problemas:
 
 Quiero encontrar una función $$f$$ que minimiza el "riesgo de perder".
 
-## 4.2 Función de riesgo teórica:
+## 4.3 Función de riesgo teórica
 
 $$R_{L}(f)=\mathbb{E}[L(y,f(x))]$$
 
