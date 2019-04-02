@@ -179,17 +179,17 @@ $$\text{sales}\approx7.03259+0.04754*\text{TV}$$
 
 <iframe scrolling="no"
 src="https://www.geogebra.org/graphing/srqyh2wv"
-width="1600px"
-height="715px"
+width="650px"
+height="400px"
 style="border:0px;">
 </iframe>
-```
-sales(TV)=7.03259+0.04754TV
-```
+
 
 Usualmente el modelo que seleccionemos no es igual a la verdadera forma de $$f$$, esa es la desventaja de utilizar modelos paramétricos.
 
 ### Métodos no paramétricos
+
+
 
 ## 4.2 Función de perdida
 
