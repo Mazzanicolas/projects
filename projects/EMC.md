@@ -159,6 +159,38 @@ $$Y \approx \hat{f}(X)$$
 
 Para cualquier observación $$(X, Y)$$
 
+### Métodos paramétricos
+
+Primero tenemos que asumir una forma para la función $$f$$, por ejemplo, que $$f$$ es lineal:
+
+$$f(X)=\beta_{0}+\beta_{1}X_{1}+\beta_{2}X_{2}+\cdots+\beta_{m}X_{m}$$
+
+Cuando asumimos la forma de $$f$$ el problema se simplifica, en vez de estimar una función de dimensión $$m$$ solo tenemos que estimar $$m+1$$ parámetros, $$\beta_{0},\ \beta_{1},\cdots,\ \beta_{m}$$.
+
+Después que seleccionamos un modelo (lineal en este caso), tenemos que realizar algún procedimiento para entrenar el modelo (a este procedimiento también se le llama *fit* o *train*). En este caso para el modelo lineal tenemos que estimar los parámetros $$\beta_{0},\ \beta_{1},\cdots,\ \beta_{m}$$ tal que:
+
+$$Y\approx\beta_{0}+\beta_{1}X_{1}+\beta_{2}X_{2}+\cdots+\beta_{m}X_{m}$$
+
+Ejemplo:
+
+$$\text{sales}\approx\beta_{0}+\beta_{1}\text{TV}$$
+
+$$\text{sales}\approx7.03259+0.04754*\text{TV}$$
+
+<iframe scrolling="no"
+src="https://www.geogebra.org/graphing/srqyh2wv"
+width="1600px"
+height="715px"
+style="border:0px;">
+</iframe>
+```
+sales(TV)=7.03259+0.04754TV
+```
+
+Usualmente el modelo que seleccionemos no es igual a la verdadera forma de $$f$$, esa es la desventaja de utilizar modelos paramétricos.
+
+### Métodos no paramétricos
+
 ## 4.2 Función de perdida
 
 La función $$L(y,u)$$ cuantifica cual es la perdida de decir $$u$$ cuando el verdadero valor es $$y$$
