@@ -20,9 +20,15 @@ Estadistica Multivariada Computacional 2019, basado en las clases de Mathias Bou
 * Aprendizaje no supervisado
 * *Aprendizaje por refuerzo*
 
+La mayoría de los problemas cae en una de dos categorías, supervisado o no supervisado.
+
 ## 2.1 Aprendizaje supervisado
 
+Para cada una de las observaciónes $$x_{i}$$, $$i=1,2,\cdots,m$$ tenemos una respuesta asociada $$y_{i}$$. Lo que buscamos es ajustar un modelo que relacione las observaciones con su respuesta asociada con el objetivo de predecir futuras respuestas.
+
 ## 2.2 Aprendizaje no supervisado
+
+En el aprendizaje no supervisado para cada una de las observaciónes $$x_{i}$$, $$i=1,2,\cdots,m$$ no tenemos una respuesta asociada $$y_{i}$$.
 
 ## 2.3 Aprendizaje por refuerzo
 
@@ -177,18 +183,20 @@ $$\text{sales}\approx\beta_{0}+\beta_{1}\text{TV}$$
 
 $$\text{sales}\approx7.03259+0.04754*\text{TV}$$
 
-<iframe scrolling="no"
-src="https://www.geogebra.org/graphing/srqyh2wv"
-width="650px"
-height="400px"
-style="border:0px;">
-</iframe>
-
-
 Usualmente el modelo que seleccionemos no es igual a la verdadera forma de $$f$$, esa es la desventaja de utilizar modelos paramétricos.
 
 ### Métodos no paramétricos
 
+Los métodos no paramétricos no asumen de forma explicita la forma de $$f$$, estos métodos buscan un estimado de $$f$$ que se aproxime a los datos. Esto tiene una ventaja sobre los métodos paramétricos ya que no asumen la forma de $$f$$ y eso permite conseguir una mejor aproximación a la forma de $$f$$. La desventaja de estos modelos es la gran cantidad de observaciones que requieren para tener una buena aproximación a $$f$$.
+
+## 4 Interpretabilidad vs Precisión
+
+Algunos métodos son flexibles mientras que otros son restrictivos en cuanto a la forma de $$f$$.
+
+![F](./emc_resources/img/flevsacc.png)
+*Imagen tomada de Introduction to Statistical Learning*
+
+    Una representación de la compensación entre flexibilidad e interpretabilidad, utilizando diferentes métodos de aprendizaje estadístico. En general, a medida que aumenta la flexibilidad de un método, disminuye su capacidad de interpretación.
 
 
 ## 4.2 Función de perdida
