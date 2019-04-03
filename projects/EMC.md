@@ -28,13 +28,16 @@ Para cada una de las observaciónes $$x_{i}$$, $$i=1,2,\cdots,m$$ tenemos una re
 
 ## 2.2 Aprendizaje no supervisado
 
-En el aprendizaje no supervisado para cada una de las observaciónes $$x_{i}$$, $$i=1,2,\cdots,m$$ no tenemos una respuesta asociada $$y_{i}$$.
+En el aprendizaje no supervisado para cada una de las observaciónes $$x_{i}$$, $$i=1,2,\cdots,m$$ no tenemos una respuesta asociada $$y_{i}$$. En este caso buscamos la relación entre las observaciones o variables
 
 ## 2.3 Aprendizaje por refuerzo
 
 # 3 Bases de datos
 
-Las bases de datos también conocidas como *datasets*, FILL THIS HERE. 
+Las bases de datos también conocidas como *datasets*, es un conjunto de datos corresponde a los contenidos de una única tabla de base de datos o una única matriz de datos estadística, donde cada columna de la tabla representa una variable en particular, y cada fila representa a un miembro determinado del conjunto de datos en cuestión.
+
+Un conjunto de datos contiene los valores para cada una de las variables, como por ejemplo la altura y el peso de un objeto, que corresponden a cada miembro del conjunto de datos. Cada uno de estos valores se conoce con el nombre de dato. El conjunto de datos puede incluir datos para uno o más miembros en función de su número de filas. 
+
 Podemos separarlas en dos tipos, bases de datos con etiqueta (o *label*) y sin etiquetar.
 
 ## 3.1 Bases de datos con etiqueta
@@ -189,7 +192,7 @@ Usualmente el modelo que seleccionemos no es igual a la verdadera forma de $$f$$
 
 Los métodos no paramétricos no asumen de forma explicita la forma de $$f$$, estos métodos buscan un estimado de $$f$$ que se aproxime a los datos. Esto tiene una ventaja sobre los métodos paramétricos ya que no asumen la forma de $$f$$ y eso permite conseguir una mejor aproximación a la forma de $$f$$. La desventaja de estos modelos es la gran cantidad de observaciones que requieren para tener una buena aproximación a $$f$$.
 
-## 4 Interpretabilidad vs Precisión
+## 5 Interpretabilidad vs Precisión
 
 Algunos métodos son flexibles mientras que otros son restrictivos en cuanto a la forma de $$f$$.
 
@@ -199,7 +202,7 @@ Algunos métodos son flexibles mientras que otros son restrictivos en cuanto a l
     Una representación de la compensación entre flexibilidad e interpretabilidad, utilizando diferentes métodos de aprendizaje estadístico. En general, a medida que aumenta la flexibilidad de un método, disminuye su capacidad de interpretación.
 
 
-## 4.2 Función de perdida
+## 6 Función de perdida
 
 La función $$L(y,u)$$ cuantifica cual es la perdida de decir $$u$$ cuando el verdadero valor es $$y$$
 
@@ -219,7 +222,7 @@ Algunos ejemplos de funciones de error para diferentes problemas:
 
 Quiero encontrar una función $$f$$ que minimiza el "riesgo de perder".
 
-## 4.3 Función de riesgo teórica
+## 7 Función de riesgo teórica
 
 $$R_{L}(f)=\mathbb{E}[L(y,f(x))]$$
 
@@ -250,6 +253,6 @@ Cuantos más datos se tienen el riesgo empírico $$f_{n}$$ se aproxima más al t
 
 $$ar\underset{f}g\underset{\in}m\underset{C}in\ \frac{1}{n} \sum^{n}_{i=1}\ \mathbb{1}(y_{i}, f(x_{i}))$$
 
-
+# 8 Evaluación del desempeño de un modelo
 
 <script>function showHide(item) {var x = document.getElementById(item);if (x.style.display==="none"){x.style.display="block";}else{x.style.display="none";}}</script>
