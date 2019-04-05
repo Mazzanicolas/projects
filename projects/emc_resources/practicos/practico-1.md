@@ -1,3 +1,5 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 # Practico 1
 
 
@@ -91,13 +93,25 @@ $$({A}'A)^{-1}=\begin{pmatrix}
 5 &5 \\
 5 &6
 \end{pmatrix}^{-1}\Rightarrow$$
-$
+$$
 \Rightarrow
 \begin{pmatrix}
-5 & 5 & \vline 1 & 0\\
-5 & 6 & \vline 0 & 1
+5 & 5 & |\ \ 1 & 0\\
+5 & 6 & |\ \ 0 & 1
+\end{pmatrix}\Rightarrow
+\begin{pmatrix}
+5 & 5 & |\ \ \ \ \ \ 1 & 0\\
+0 & 1 & |\ -1 & 1
+\end{pmatrix}\Rightarrow
+\begin{pmatrix}
+1 & 1 & |\ \ \ \ \ \ \frac{1}{5} & 0\\
+0 & 1 & |\ -1 & 1
+\end{pmatrix}\Rightarrow
+\begin{pmatrix}
+1 & 0 & \vline\ \ \ \ \ \ \frac{6}{5} & -1\\
+0 & 1 & \vline\ -1 & 1
 \end{pmatrix}
-$
+$$
 
 
 ### Determinante $$A{A}'$$
@@ -106,5 +120,3 @@ $
 
 ### Inversa $$A{A}'$$
 
-
-<script>function showHide(item) {var x = document.getElementById(item);if (x.style.display==="none"){x.style.display="block";}else{x.style.display="none";}}</script>
