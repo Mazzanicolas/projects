@@ -192,7 +192,7 @@ Usualmente el modelo que seleccionemos no es igual a la verdadera forma de $$f$$
 
 Los métodos no paramétricos no asumen de forma explicita la forma de $$f$$, estos métodos buscan un estimado de $$f$$ que se aproxime a los datos. Esto tiene una ventaja sobre los métodos paramétricos ya que no asumen la forma de $$f$$ y eso permite conseguir una mejor aproximación a la forma de $$f$$. La desventaja de estos modelos es la gran cantidad de observaciones que requieren para tener una buena aproximación a $$f$$.
 
-## 5 Interpretabilidad vs Precisión
+# 5 Interpretabilidad vs Precisión
 
 Algunos métodos son flexibles mientras que otros son restrictivos en cuanto a la forma de $$f$$.
 
@@ -202,7 +202,7 @@ Algunos métodos son flexibles mientras que otros son restrictivos en cuanto a l
     Una representación de la compensación entre flexibilidad e interpretabilidad, utilizando diferentes métodos de aprendizaje estadístico. En general, a medida que aumenta la flexibilidad de un método, disminuye su capacidad de interpretación.
 
 
-## 6 Función de perdida
+# 6 Función de perdida
 
 La función $$L(y,u)$$ cuantifica cual es la perdida de decir $$u$$ cuando el verdadero valor es $$y$$
 
@@ -222,7 +222,7 @@ Algunos ejemplos de funciones de error para diferentes problemas:
 
 Quiero encontrar una función $$f$$ que minimiza el "riesgo de perder".
 
-## 7 Función de riesgo teórica
+# 7 Función de riesgo teórica
 
 $$R_{L}(f)=\mathbb{E}[L(y,f(x))]$$
 
@@ -254,5 +254,9 @@ Cuantos más datos se tienen el riesgo empírico $$f_{n}$$ se aproxima más al t
 $$ar\underset{f}g\underset{\in}m\underset{C}in\ \frac{1}{n} \sum^{n}_{i=1}\ \mathbb{1}(y_{i}, f(x_{i}))$$
 
 # 8 Evaluación del desempeño de un modelo
+
+Para poder evaluar el desempeño (o *performance*) de un modelo necesitamos medir que tanto se aproximan sus predicciones a su valor real.
+
+[Practico 1](./emc_resources/practicos/practico-1.md)
 
 <script>function showHide(item) {var x = document.getElementById(item);if (x.style.display==="none"){x.style.display="block";}else{x.style.display="none";}}</script>
