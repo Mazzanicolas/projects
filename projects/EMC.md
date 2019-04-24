@@ -258,5 +258,6 @@ $$ar\underset{f}g\underset{\in}m\underset{C}in\ \frac{1}{n} \sum^{n}_{i=1}\ \mat
 Para poder evaluar el desempeño (o *performance*) de un modelo necesitamos medir que tanto se aproximan sus predicciones a su valor real.
 
 [Practico 1](./emc_resources/practicos/practico-1.md)
+[Entregable 1](./emc_resources/entregables/entregable-1.md)
 
 <script>function showHide(item) {var x = document.getElementById(item);if (x.style.display==="none"){x.style.display="block";}else{x.style.display="none";}}</script>
