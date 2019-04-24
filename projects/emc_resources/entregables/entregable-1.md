@@ -176,6 +176,11 @@ Repetir el paso anterior con la base de datos de Iris.
 
 `rm(iris2)`
 
+```
+> iris2
+Error: object 'iris2' not found
+```
+
 <br>
 
 # Práctico 1 Ej 8
