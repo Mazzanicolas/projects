@@ -256,6 +256,8 @@ $$
 
 $$\int_{0}^{1} \int_{0}^{1-x}f(x,y)\ dydx=1$$
 
+<br>
+
 $$\int_{0}^{1} \int_{0}^{1-x}Kx\ dydx = \int_{0}^{1} Kxy\ \vert_{0}^{1-x} \ dx=\int_{0}^{1} Kx(1-x)-Kx(0) \ dx=\int_{0}^{1} Kx-Kx^2\ dx$$
 
 $$=\int_{0}^{1} Kx\ dx-\int_{0}^{1}Kx^2\ dx= K\frac{x^2}{2} \vert_{0}^{1}- K\frac{x^3}{3} \ \vert_{0}^{1}$$
@@ -263,6 +265,8 @@ $$=\int_{0}^{1} Kx\ dx-\int_{0}^{1}Kx^2\ dx= K\frac{x^2}{2} \vert_{0}^{1}- K\fra
 $$=K\frac{1^2}{2}-K\frac{0}{2} -( K\frac{1^3}{3} -K\frac{0}{3})=K\frac{1}{2} - K\frac{1}{3})=\frac{K}{6}$$
 
 $$\Rightarrow \frac{K}{6}=1\Rightarrow K=6$$
+
+<br>
 
 $$
 f(x, y) =
@@ -281,6 +285,8 @@ $$
 
 $$f_x(x)=\int_{-\infty}^{+\infty} f_{xy}(x,y)\ dy=\int_{-\infty}^{-0} 0\ dy+\int_{0}^{1-x} 6x\ dy+\int_{1-x}^{+\infty}0\ dy=\int_{0}^{1-x} 6x\ dy=6xy\vert_{0}^{1-x}=6x(1-x)=6x-6x^2$$
 
+<br>
+
 $$
 \int_{-\infty}^{+\infty} f_x(x)\ dx=1
 $$
@@ -293,6 +299,8 @@ $$
 =\int_{0}^{1} 6x\ dx-\int_{0}^{1} 6x^2\ dx = 3x^2\vert_{0}^{1}-2x^3\vert_{0}^{1}=3-2=1
 $$
 
+<br>
+
 $$
 f_y(y)=\int_{-\infty}^{+\infty} f_{xy}(x,y)\ dx=\int_{-\infty}^{0} 0\ dx+\int_{0}^{1-y} 6x\ dx+\int_{1-y}^{+\infty} 0\ dx=\int_{0}^{1-y} 6x\ dx=3x^2\vert_{0}^{1-y}
 $$
@@ -300,6 +308,8 @@ $$
 $$
 =3(1-y)^2=3(1-2y+y^2)=3-6y+3y^2
 $$
+
+<br>
 
 $$
 \int_{-\infty}^{+\infty} f_y(y)\ dy=1
@@ -332,6 +342,8 @@ f_{xy}(x|y)=\frac{f_{xy}(x,y)}{f_y(y)}=
 \end{matrix}\right.
 $$
 
+<br>
+
 $$
 f_{xy}(y|x)=\frac{f_{xy}(x,y)}{f_x(x)}=
 \left\{\begin{matrix}
@@ -362,6 +374,8 @@ $$
 \end{pmatrix}
 $$
 
+<br>
+
 $$
 \int_{-\infty}^{+\infty} xf_x(x)\ dx=\int_{-\infty}^{0} 0\ dx+\int_{0}^{1} x(6x-6x^2)\ dx+\int_{1}^{+\infty} 0\ dx=\int_{0}^{1} x(6x-6x^2)\ dx=\int_{0}^{1} 6x^2\ dx-\int_{0}^{1} 6x^3\ dx
 $$
@@ -369,6 +383,8 @@ $$
 $$
 =2x^3\vert_{0}^{1}-\frac{3x^4}{2}\vert_{0}^{1}=2-\frac{3}{2}=\frac{1}{2}
 $$
+
+<br>
 
 $$
 \int_{-\infty}^{+\infty} yf_y(y)\ dy=\int_{-\infty}^{0} 0\ dy+\int_{0}^{1} y(3-6y+3y^2)\ dy+\int_{1}^{+\infty} 0\ dy=\int_{0}^{1} y(3-6y+3y^2)\ dy=\int_{0}^{1} 3y-6y^2+3y^3\ dy
@@ -378,6 +394,7 @@ $$
 \int_{0}^{1} 3y\ dy-\int_{0}^{1} 6y^2\ dy+\int_{0}^{1} 3y^3\ dy=\frac{3y^2}{2}\vert_{0}^{1}-2y^3\vert_{0}^{1}+\frac{3y^4}{4}\vert_{0}^{1}=\frac{3}{2}-2+\frac{3}{4}=\frac{1}{4}
 $$
 
+<br>
 
 $$
 \begin{pmatrix}
