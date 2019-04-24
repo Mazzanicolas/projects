@@ -288,6 +288,7 @@ $$
 $$
  \Rightarrow \int_{-\infty}^{0}0\ dx+\int_{0}^{1} 6x-6x^2\ dx + \int_{1}^{+\infty}0\ dx=\int_{0}^{1} 6x-6x^2\ dx
 $$
+
 $$
 =\int_{0}^{1} 6x\ dx-\int_{0}^{1} 6x^2\ dx = 3x^2\vert_{0}^{1}-2x^3\vert_{0}^{1}=3-2=1
 $$
@@ -295,6 +296,7 @@ $$
 $$
 f_y(y)=\int_{-\infty}^{+\infty} f_{xy}(x,y)\ dx=\int_{-\infty}^{0} 0\ dx+\int_{0}^{1-y} 6x\ dx+\int_{1-y}^{+\infty} 0\ dx=\int_{0}^{1-y} 6x\ dx=3x^2\vert_{0}^{1-y}
 $$
+
 $$
 =3(1-y)^2=3(1-2y+y^2)=3-6y+3y^2
 $$
