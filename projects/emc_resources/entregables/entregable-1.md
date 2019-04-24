@@ -3,9 +3,11 @@
 
 # Entregable 1
 
-## Practico 0 Ej. 7
+## Practico 0 
 
-#### Practico 0 - 7) Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 observaciones (o sea 6 filas).
+#### Ej. 7
+
+Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 observaciones (o sea 6 filas).
 
 `c1 <- c(1,2,3,4,5,6)`
 
@@ -29,7 +31,9 @@
 > typeof(c5)
 [1] "character"
 ```
-#### 0 - 7 - a) Dar nombres a las filas y nombres a las columnas.
+#### Ej. 7 pt. a)
+
+Dar nombres a las filas y nombres a las columnas.
 
 `colnames(miejemplo) <- c('col_1','col_2','col_3','col_4','col_5')`
 
@@ -46,7 +50,9 @@ row_5     5    10    20    40     e
 row_6     6    12    24    48     f
 ```
 
-#### 0 - 7 - b) Añadir a este objeto una columna que sea la suma de las 3 primeras columnas numéricas y otra columna que indica con 0/1 si el valor numérico de la segunda columna es mayor que 5 o no. Dar un nombre a estas nuevas columnas.
+#### Ej. 7 pt. b)
+
+Añadir a este objeto una columna que sea la suma de las 3 primeras columnas numéricas y otra columna que indica con 0/1 si el valor numérico de la segunda columna es mayor que 5 o no. Dar un nombre a estas nuevas columnas.
 
 `miejemplo$$sum_1_2_3 <- miejemplo$$col_1 + miejemplo$$col_2 + miejemplo$$col_3`
 
@@ -66,7 +72,9 @@ row_4     4     8    16    32     d      28       1
 row_5     5    10    20    40     e      35       1
 row_6     6    12    24    48     f      42       1
 ```
-#### 0 - 7- c) Borrar la primera fila y la última columna. Dar un nombre a este nuevo objeto
+#### Ej. 7 pt. c)
+
+Borrar la primera fila y la última columna. Dar un nombre a este nuevo objeto
 
 `nuevo_ejemplo <- miejemplo[-1,-length(miejemplo)]`
 
@@ -80,7 +88,9 @@ row_5     5    10    20    40     e      35
 row_6     6    12    24    48     f      42
 ```
 
-#### 0 - 7 - d) Hacer un resumen estadístico de los datos de este data frame cuando esto tiene sentido.
+#### Ej. 7 pt. d) 
+
+Hacer un resumen estadístico de los datos de este data frame cuando esto tiene sentido.
 
 *En realidad no tiene mucho sentido hacer un resumen estadístico de estos datos, pero ahí van.*
 
@@ -103,7 +113,9 @@ row_6     6    12    24    48     f      42
  Max.   :1.0000
 ```
 
-#### 0 - 7 - e) Escribir miejemplo en un archivo de texto miejemplo.txt. Borrar el objeto de R. Cargar este archivo en el objeto miejemplo2.
+#### Ej. 7 pt. e)
+
+Escribir miejemplo en un archivo de texto miejemplo.txt. Borrar el objeto de R. Cargar este archivo en el objeto miejemplo2.
 
 `write.table(miejemplo, 'miejemplo.csv', append = FALSE, sep = ",", dec = ".", row.names = TRUE, col.names = TRUE)`
 
@@ -127,7 +139,9 @@ row_5     5    10    20    40     e      35       1
 row_6     6    12    24    48     f      42       1
 ```
 
-#### 0 - 7 - f) Repetir el paso anterior con la base de datos de Iris.
+#### Ej. 7 pt. f)
+
+Repetir el paso anterior con la base de datos de Iris.
 
 `write.table(iris, 'iris.csv', append = FALSE, sep = ",",dec = ".", row.names = TRUE,col.names = TRUE)`
 
@@ -147,25 +161,52 @@ row_6     6    12    24    48     f      42       1
 150          5.9         3.0          5.1         1.8  virginica
 ```
 
-## Practico 1 Ej 8 Sean x e y vectores aleatorios, A y B matrices y c un vector fijo (no aleatorio) real. Pruebe que:
+## Practico 1 
+
+Ej 8 Sean x e y vectores aleatorios, A y B matrices y c un vector fijo (no aleatorio) real. Pruebe que:
+
+<br>
+<br>
 
 #### $$\mathbb{E}(Ax) = A\mathbb{E}(x)$$
 
+<br>
+
 $$\mathbb{E}(Ax)=\frac{1}{n}\sum_{i=1}^{n}Ax_i=A\frac{1}{n}\sum_{i=1}^{n}x_i=A\mathbb{E}(x)$$
+
+<br>
+<br>
 
 #### $$Cov(Ax,By) = ACov(x,y)B'$$
 
+<br>
+
 $$Cov(Ax,By)=\mathbb{E}((Ax-\bar{x})(By-\bar{y})')=\mathbb{E}(A(x-\bar{x})(y-\bar{y})'B')=A\mathbb{E}((x-\bar{x})(y-\bar{y})')B'=ACov(x,y)B'$$
+
+<br>
+<br>
 
 #### $$Var(Ax) = AVar(x)A'$$
 
+<br>
+
 $$Var(Ax)=Cov(Ax,Ax)=\mathbb{E}((Ax-\bar{x})(Ax-\bar{x})')=\mathbb{E}(A(x-\bar{x})(x-\bar{x})'A')=A\mathbb{E}((x-\bar{x})(x-\bar{x})')A'=ACov(x,x)A'=AVar(x)A'$$
+
+<br>
+<br>
 
 #### $$Cov(x, y) = \mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
 
+<br>
+
 $$Cov(x,y)=\mathbb{E}((x-\mathbb{E}(x))(y-\mathbb{E}(y))')=\mathbb{E}(xy'-x\mathbb{E}(y)'-\mathbb{E}(x)y'+\mathbb{E}(x)\mathbb{E}(y)')=\mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'-\mathbb{E}(x)\mathbb{E}(y)'+\mathbb{E}(x)\mathbb{E}(y)'=\mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
 
+<br>
+<br>
+
 #### $$Var(x-c) = Var(x)$$
+
+<br>
 
 $$Var(x-c)=\mathbb{E}((x-c)^2)-(\mathbb{E}(x-c))^2=\mathbb{E}(x^2-2xc+c^2)-(\mathbb{E}(x)-\mathbb{E}(c))^2=\mathbb{E}(x^2)-\mathbb{E}(2xc)+\mathbb{E}(c^2)-(\mathbb{E}(x)-\mathbb{E}(c))^2$$
 
@@ -173,14 +214,24 @@ $$=\mathbb{E}(x^2)-\mathbb{E}(2xc)+\mathbb{E}(c^2)-(\mathbb{E}(x)^2-2\mathbb{E}(
 
 $$=\mathbb{E}(x^2)-2c\mathbb{E}(x)+c^2-(\mathbb{E}(x)^2-2c\mathbb{E}(x)+c^2)=\mathbb{E}(x^2)-2c\mathbb{E}(x)+c^2-\mathbb{E}(x)^2+2c\mathbb{E}(x)-c^2=\mathbb{E}(x^2)-\mathbb{E}(x)^2=Var(x)$$
 
+<br>
+<br>
+
 #### Si x ∼ (µ, Σ) entonces E(x'Ax) = tr(AΣ) + µ'Aµ
+
+<br>
 
 $$X'AX=(X-\mu)'AX+\mu'AX=(X-\mu)'A(X-\mu)+\mu'AX+(X-\mu)'A\mu$$
 $$\Rightarrow \mathbb{E}(X'AX)=\mathbb{E}((X-\mu)'A(X-\mu))+\mu'A\mu$$
 $$=(\sum_{i=1}^{n}\sum_{j=1}^{n}\mathbb{E}[(X-\mu)_i'A_{ij}(X-\mu)_i])+\mu'A\mu=(\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}Var(X-\mu)_{ij})+\mu'A\mu=(\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}Σ_{ij})+\mu'A\mu$$
 $$(\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}Σ_{ji})+\mu'A\mu=(\sum_{i=1}^{n}\sum_{j=1}^{n}(AΣ)_{ii})+\mu'A\mu=tr(AΣ)+\mu'A\mu$$
 
+<br>
+<br>
+
 ## Practico 1 Ej 14 Se considera la función de densidad dada por
+
+<br>
 
 $$
 f(x, y) =
@@ -189,11 +240,12 @@ Kx & si\ \ 0 < x < 1,\ 0 < y < 1 - x\\
 0  & \text{en otro caso}
 \end{matrix}\right.
 $$
+
+<br>
 <br>
 
 #### Halle $$K$$ para que sea una función de densidad se tiene que cumplir:
 
-<br>
 <br>
 
 $$\int_{0}^{1} \int_{0}^{1-x}f(x,y)\ dydx=1$$
@@ -213,10 +265,10 @@ f(x, y) =
 $$
 
 <br>
+<br>
 
 #### Halle las funciónes de densidad marginales
 
-<br>
 <br>
 
 $$f_x(x)=\int_{-\infty}^{+\infty} f_{xy}(x,y)\ dy=\int_{-\infty}^{-0} 0\ dy+\int_{0}^{1-x} 6x\ dy+\int_{1-x}^{+\infty}0\ dy=\int_{0}^{1-x} 6x\ dy=6xy\vert_{0}^{1-x}=6x(1-x)=6x-6x^2$$
@@ -234,10 +286,10 @@ $$
 $$
 
 <br>
+<br>
 
 #### Halle las densidades condicionales
 
-<br>
 <br>
 
 $$
@@ -265,10 +317,10 @@ f_{xy}(y|x)=\frac{f_{xy}(x,y)}{f_x(x)}=
 $$
 
 <br>
+<br>
 
 #### Halle el vector de medias
 
-<br>
 <br>
 
 $$
