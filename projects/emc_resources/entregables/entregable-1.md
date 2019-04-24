@@ -474,15 +474,15 @@ $$
 <br>
 
 $$
-\mathbb{E}[Y^2]=\int_{-\infty}^{+\infty} y^2f_y(y)\ dy=\int_{-\infty}^{+\infty} y^2(3-6y+3y^2)\ dy=\int_{-\infty}^{0} 0\ dy +\int_{0}^{1} y^2(3-6y+3y^2)\ dy +\int_{1}^{+\infty} 0\ dy =\int_{0}^{1} y^2(3-6y+3y^2)\ dy
+\mathbb{E}[Y^2]=\int_{-\infty}^{+\infty} y^2f_y(y)\ dy=\int_{-\infty}^{+\infty} y^2(3-6y+3y^2)\ dy=\int_{-\infty}^{0} 0\ dy +\int_{0}^{1} y^2(3-6y+3y^2)\ dy +\int_{1}^{+\infty} 0\ dy 
 $$
 
 $$
-=\int_{0}^{1} y^2(3-6y+3y^2)\ dy=\int_{0}^{1} 3y^2-6y^3+3y^4\ dy=\int_{0}^{1}3y^2\ dy-\int_{0}^{1}6y^3\ dy+\int_{0}^{1}3y^4\ dy
+=\int_{0}^{1} y^2(3-6y+3y^2)\ dy=\int_{0}^{1} y^2(3-6y+3y^2)\ dy=\int_{0}^{1} 3y^2-6y^3+3y^4\ dy
 $$
 
 $$
-y^3\vert_{0}^{1}-\frac{3y^4}{2}\vert_{0}^{1}+\frac{3y^5}{5}\vert_{0}^{1}=1-\frac{3}{2}+\frac{3}{5}=\frac{1}{10}
+=\int_{0}^{1}3y^2\ dy-\int_{0}^{1}6y^3\ dy+\int_{0}^{1}3y^4\ dy = y^3\vert_{0}^{1}-\frac{3y^4}{2}\vert_{0}^{1}+\frac{3y^5}{5}\vert_{0}^{1}=1-\frac{3}{2}+\frac{3}{5}=\frac{1}{10}
 $$
 
 <br>
@@ -532,5 +532,67 @@ Cov(X,Y) & Var(Y)
 \begin{pmatrix}
 \frac{1}{20} & -\frac{1}{40}\\
 -\frac{1}{40} & \frac{3}{80} 
+\end{pmatrix}=
+\begin{pmatrix}
+0.05 & -0.025\\
+-0.025 & 0.0375 
 \end{pmatrix}
 $$
+
+<br>
+<br>
+
+## Halle el coeficiente de correlación
+
+<br>
+
+$$
+\rho = \frac{Cov(X,Y)}{\sigma_x\sigma_y}
+$$
+
+<br>
+
+$$
+\sigma_x = \sqrt{Var(x)}=\sqrt{\frac{1}{20}} = \frac{\sqrt{5}}{10}
+$$
+
+$$
+\sigma_y = \sqrt{Var(y)}=\sqrt{\frac{3}{80}} = \frac{\sqrt{15}}{20}
+$$
+
+$$
+\sigma_x \sigma_y= \frac{\sqrt{5}}{10}*\frac{\sqrt{15}}{20}=\frac{\sqrt{3}}{40}
+$$
+
+<br>
+
+$$
+\rho = \frac{Cov(X,Y)}{\sigma_x\sigma_y}=\frac{-0.025}{\frac{\sqrt{3}}{40}}=-\frac{\sqrt{3}}{3}\approx-0.57
+$$
+
+<br>
+<br>
+
+# Práctico 2 Ej 1
+
+<br>
+
+Se extraen sucesivamente, sin reemplazamiento, dos bolas de una urna que contiene tres blancas y dos negras. En relación a este experimento, se definen las siguientes variables:
+
+$$
+X=
+\left\{\begin{matrix}
+0 & \text{si la primera bola es blanca}\\
+1 & \text{si la primera bola es negra}
+\end{matrix}\right.
+\ \ \ \ \ \ \ \ \ \ \ \ \ 
+Y=
+\left\{\begin{matrix}
+0 & \text{si la segunda bola es blanca}\\
+1 & \text{si la segunda bola es negra}
+\end{matrix}\right.
+$$
+
+Descomponer la varianza de la variable X teniendo en cuenta el condicionamiento a Y
+
+<br><br><br>
