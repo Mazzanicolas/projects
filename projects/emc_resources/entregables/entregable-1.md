@@ -21,11 +21,19 @@ Miércoles, 24 de abril de 2019
 
 Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 observaciones (o sea 6 filas).
 
+
 `c1 <- c(1,2,3,4,5,6)`
 
 `c5 <- c('a', 'b', 'c', 'd', 'e', 'f')`
 
-`miejemplo <- data.frame(c1, c2=c1*2, c3=c2*2, c4=c3*2, c5)`
+`c2<-(c1*2)`
+
+`c3<-(c2*2)`
+
+`c4<-(c3*2)`
+
+`miejemplo <- data.frame(c1, c2, c3, c4, c5)`
+
 
 ```
 > miejemplo
