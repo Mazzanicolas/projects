@@ -595,4 +595,33 @@ $$
 
 Descomponer la varianza de la variable X teniendo en cuenta el condicionamiento a Y
 
+$$
+Var(X)=Var(E[X|Y])+E[Var(X|Y)] \ \text{queremos obtener} \ 
+\left\{\begin{matrix}
+Var(E[X|Y]) \\
+\\
+E[Var(X|Y)]
+\end{matrix}\right.
+$$
+
+$$
+P(X=1)=\frac{2}{5} \ \ \ \ \ P(X=0)=\frac{3}{5}
+$$
+
+$$
+P(Y=0|X=0)=\frac{2}{4}*\frac{3}{5}=\frac{3}{10}\ \ \ \ \ \ P(Y=0|X=1)=\frac{3}{4}*\frac{2}{5}=\frac{3}{10}
+$$
+
+$$
+P(Y=1|X=0)=\frac{2}{4}*\frac{3}{5}=\frac{3}{10} \ \ \ \ \ P(Y=1|X=1)=\frac{1}{4}*\frac{2}{5}=\frac{1}{10}
+$$
+
+| | | | |
+|-|-|-|-|
+| |Y| | |
+|X|0|1|$$P(X=x_i)$$|
+|0|$\frac{3}{10}$|$\frac{3}{10}$|$\frac{3}{5}$|
+|1|$\frac{3}{10}$|$\frac{1}{10}$|$\frac{2}{5}$|
+|$P(Y=y_i)$|$\frac{3}{5}$|$\frac{2}{5}$
+
 <br><br><br>
