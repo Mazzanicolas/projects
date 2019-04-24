@@ -189,10 +189,12 @@ Kx & si\ \ 0 < x < 1,\ 0 < y < 1 - x\\
 0  & \text{en otro caso}
 \end{matrix}\right.
 $$
+<br>
 
-#### Halle $$K$$
+#### Halle $$K$$ para que sea una función de densidad se tiene que cumplir:
 
-Para que sea una función de densidad se tiene que cumplir:
+<br>
+<br>
 
 $$\int_{0}^{1} \int_{0}^{1-x}f(x,y)\ dydx=1$$
 
@@ -210,7 +212,12 @@ f(x, y) =
 \end{matrix}\right.
 $$
 
+<br>
+
 #### Halle las funciónes de densidad marginales
+
+<br>
+<br>
 
 $$f_x(x)=\int_{-\infty}^{+\infty} f_{xy}(x,y)\ dy=\int_{-\infty}^{-0} 0\ dy+\int_{0}^{1-x} 6x\ dy+\int_{1-x}^{+\infty}0\ dy=\int_{0}^{1-x} 6x\ dy=6xy\vert_{0}^{1-x}=6x(1-x)=6x-6x^2$$
 
@@ -224,4 +231,81 @@ $$
 
 $$
 \int_{-\infty}^{+\infty} f_y(y)\ dy=1 \Rightarrow \int_{-\infty}^{0}0\ dy +\int_{0}^{1}3-6y+3y^2\ dy+\int_{1}^{+\infty}0\ dy=\int_{0}^{1}3-6y+3y^2\ dy=\int_{0}^{1}3\ dy- \int_{0}^{1}6y\ dy+ \int_{0}^{1}3y^2\ dy=3y\vert_{0}^{1}-3y^2\vert_{0}^{1}+y^3\vert_{0}^{1}=3-3+1=1
+$$
+
+<br>
+
+#### Halle las densidades condicionales
+
+<br>
+<br>
+
+$$
+f_{xy}(x|y)=\frac{f_{xy}(x,y)}{f_y(y)}=
+\left\{\begin{matrix}
+\frac{6x}{3(1-2y+2y^2)} & si\ \ 0 < x < 1,\ 0 < y < 1 - x\\ 
+0  & \text{en otro caso}
+\end{matrix}\right.=
+\left\{\begin{matrix}
+\frac{2x}{1-2y+2y^2} & si\ \ 0 < x < 1,\ 0 < y < 1 - x\\ 
+0  & \text{en otro caso}
+\end{matrix}\right.
+$$
+
+$$
+f_{xy}(y|x)=\frac{f_{xy}(x,y)}{f_x(x)}=
+\left\{\begin{matrix}
+\frac{6x}{6(x-x^2)} & si\ \ 0 < x < 1,\ 0 < y < 1 - x\\ 
+0  & \text{en otro caso}
+\end{matrix}\right.=
+\left\{\begin{matrix}
+\frac{1}{1-x} & si\ \ 0 < x < 1,\ 0 < y < 1 - x\\ 
+0  & \text{en otro caso}
+\end{matrix}\right.
+$$
+
+<br>
+
+#### Halle el vector de medias
+
+<br>
+<br>
+
+$$
+\begin{pmatrix}
+ \mathbb{E}(x)\\
+ \mathbb{E}(y)
+\end{pmatrix}=
+\begin{pmatrix}
+ \int_{-\infty}^{+\infty} xf_x(x)\ dx\\
+ \int_{-\infty}^{+\infty} yf_y(y)\ dy
+\end{pmatrix}
+$$
+
+$$
+\int_{-\infty}^{+\infty} xf_x(x)\ dx=\int_{-\infty}^{0} 0\ dx+\int_{0}^{1} x(6x-6x^2)\ dx+\int_{1}^{+\infty} 0\ dx=\int_{0}^{1} x(6x-6x^2)\ dx=\int_{0}^{1} 6x^2\ dx-\int_{0}^{1} 6x^3\ dx
+$$
+
+$$
+=2x^3\vert_{0}^{1}-\frac{3x^4}{2}\vert_{0}^{1}=2-\frac{3}{2}=\frac{1}{2}
+$$
+
+$$
+\int_{-\infty}^{+\infty} yf_y(y)\ dy=\int_{-\infty}^{0} 0\ dy+\int_{0}^{1} y(3-6y+3y^2)\ dy+\int_{1}^{+\infty} 0\ dy=\int_{0}^{1} y(3-6y+3y^2)\ dy=\int_{0}^{1} 3y-6y^2+3y^3\ dy
+$$
+
+$$
+\int_{0}^{1} 3y\ dy-\int_{0}^{1} 6y^2\ dy+\int_{0}^{1} 3y^3\ dy=\frac{3y^2}{2}\vert_{0}^{1}-2y^3\vert_{0}^{1}+\frac{3y^4}{4}\vert_{0}^{1}=\frac{3}{2}-2+\frac{3}{4}=\frac{1}{4}
+$$
+
+
+$$
+\begin{pmatrix}
+ \mathbb{E}(x)\\
+ \mathbb{E}(y)
+\end{pmatrix}=
+\begin{pmatrix}
+ \frac{1}{2}\\
+ \frac{1}{4}
+\end{pmatrix}
 $$
