@@ -15,8 +15,6 @@ Miércoles, 24 de abril de 2019
 
 <br>
 
-<br>
-
 # Práctico 0 Ej 7
 
 Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 observaciones (o sea 6 filas).
@@ -29,7 +27,6 @@ Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 
 `c2<-(c1*2)`
 
 `c3<-(c2*2)`
-
 `c4<-(c3*2)`
 
 `miejemplo <- data.frame(c1, c2, c3, c4, c5)`
@@ -710,4 +707,3 @@ $$
 $$
 \frac{3}{200}+\frac{9}{40}=\frac{6}{25}
 $$
-
