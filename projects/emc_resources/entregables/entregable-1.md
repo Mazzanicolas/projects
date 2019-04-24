@@ -166,7 +166,7 @@ Sean x e y vectores aleatorios, A y B matrices y c un vector fijo (no aleatorio
 <br>
 <br>
 
-## Pruebe que $$\mathbb{E}(Ax) = A\mathbb{E}(x)$$
+## Pruebe que E(Ax) = AE(x)
 
 <br>
 
@@ -175,7 +175,7 @@ $$\mathbb{E}(Ax)=\frac{1}{n}\sum_{i=1}^{n}Ax_i=A\frac{1}{n}\sum_{i=1}^{n}x_i=A\m
 <br>
 <br>
 
-## Pruebe que $$Cov(Ax,By) = ACov(x,y)B'$$
+## Pruebe que Cov(Ax, By) = ACov(x, y)B'
 
 <br>
 
@@ -184,7 +184,8 @@ $$Cov(Ax,By)=\mathbb{E}((Ax-\bar{x})(By-\bar{y})')=\mathbb{E}(A(x-\bar{x})(y-\ba
 <br>
 <br>
 
-## Pruebe que $$Var(Ax) = AVar(x)A'$$
+## Pruebe que Var(Ax) = AVar(x)A'
+
 
 <br>
 
@@ -195,7 +196,7 @@ $$=A\mathbb{E}((x-\bar{x})(x-\bar{x})')A'=ACov(x,x)A'=AVar(x)A'$$
 <br>
 <br>
 
-## Pruebe que $$Cov(x, y) = \mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
+## Pruebe que Cov(x, y) = E(xy') − E(x)E(y)'
 
 <br>
 
@@ -206,7 +207,8 @@ $$=\mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'-\mathbb{E}(x)\mathbb{E}(y)'+\math
 <br>
 <br>
 
-## Pruebe que $$Var(x-c) = Var(x)$$
+## Pruebe que Var(x − c) = Var(x)
+
 
 <br>
 
