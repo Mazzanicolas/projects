@@ -3,7 +3,7 @@
 
 # Entregable 1
 
-## Práctico 0 Ej 7
+# Práctico 0 Ej 7
 
 Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 observaciones (o sea 6 filas).
 
@@ -29,7 +29,7 @@ Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 
 > typeof(c5)
 [1] "character"
 ```
-### Ej. 7 pt. a)
+## Ej. 7 pt. a)
 
 Dar nombres a las filas y nombres a las columnas.
 
@@ -48,7 +48,7 @@ row_5     5    10    20    40     e
 row_6     6    12    24    48     f
 ```
 
-### Ej. 7 pt. b)
+## Ej. 7 pt. b)
 
 Añadir a este objeto una columna que sea la suma de las 3 primeras columnas numéricas y otra columna que indica con 0/1 si el valor numérico de la segunda columna es mayor que 5 o no. Dar un nombre a estas nuevas columnas.
 
@@ -70,7 +70,7 @@ row_4     4     8    16    32     d      28       1
 row_5     5    10    20    40     e      35       1
 row_6     6    12    24    48     f      42       1
 ```
-### Ej. 7 pt. c)
+## Ej. 7 pt. c)
 
 Borrar la primera fila y la última columna. Dar un nombre a este nuevo objeto
 
@@ -86,7 +86,7 @@ row_5     5    10    20    40     e      35
 row_6     6    12    24    48     f      42
 ```
 
-### Ej. 7 pt. d) 
+## Ej. 7 pt. d) 
 
 Hacer un resumen estadístico de los datos de este data frame cuando esto tiene sentido.
 
@@ -111,7 +111,7 @@ Hacer un resumen estadístico de los datos de este data frame cuando esto tiene 
  Max.   :1.0000
 ```
 
-### Ej. 7 pt. e)
+## Ej. 7 pt. e)
 
 Escribir miejemplo en un archivo de texto miejemplo.txt. Borrar el objeto de R. Cargar este archivo en el objeto miejemplo2.
 
@@ -137,7 +137,7 @@ row_5     5    10    20    40     e      35       1
 row_6     6    12    24    48     f      42       1
 ```
 
-### Ej. 7 pt. f)
+## Ej. 7 pt. f)
 
 Repetir el paso anterior con la base de datos de Iris.
 
@@ -159,14 +159,14 @@ Repetir el paso anterior con la base de datos de Iris.
 150          5.9         3.0          5.1         1.8  virginica
 ```
 
-## Práctico 1 Ej 8
+# Práctico 1 Ej 8
 
 Sean x e y vectores aleatorios, A y B matrices y c un vector fijo (no aleatorio) real.
 
 <br>
 <br>
 
-### Pruebe que $$\mathbb{E}(Ax) = A\mathbb{E}(x)$$
+## Pruebe que $$\mathbb{E}(Ax) = A\mathbb{E}(x)$$
 
 <br>
 
@@ -175,7 +175,7 @@ $$\mathbb{E}(Ax)=\frac{1}{n}\sum_{i=1}^{n}Ax_i=A\frac{1}{n}\sum_{i=1}^{n}x_i=A\m
 <br>
 <br>
 
-### Pruebe que $$Cov(Ax,By) = ACov(x,y)B'$$
+## Pruebe que $$Cov(Ax,By) = ACov(x,y)B'$$
 
 <br>
 
@@ -184,7 +184,7 @@ $$Cov(Ax,By)=\mathbb{E}((Ax-\bar{x})(By-\bar{y})')=\mathbb{E}(A(x-\bar{x})(y-\ba
 <br>
 <br>
 
-### Pruebe que $$Var(Ax) = AVar(x)A'$$
+## Pruebe que $$Var(Ax) = AVar(x)A'$$
 
 <br>
 
@@ -195,7 +195,7 @@ $$=A\mathbb{E}((x-\bar{x})(x-\bar{x})')A'=ACov(x,x)A'=AVar(x)A'$$
 <br>
 <br>
 
-### Pruebe que $$Cov(x, y) = \mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
+## Pruebe que $$Cov(x, y) = \mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
 
 <br>
 
@@ -206,7 +206,7 @@ $$=\mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'-\mathbb{E}(x)\mathbb{E}(y)'+\math
 <br>
 <br>
 
-### Pruebe que $$Var(x-c) = Var(x)$$
+## Pruebe que $$Var(x-c) = Var(x)$$
 
 <br>
 
@@ -219,7 +219,7 @@ $$=\mathbb{E}(x^2)-2c\mathbb{E}(x)+c^2-(\mathbb{E}(x)^2-2c\mathbb{E}(x)+c^2)=\ma
 <br>
 <br>
 
-### Pruebe que Si x ∼ (µ, Σ) entonces E(x'Ax) = tr(AΣ) + µ'Aµ
+## Pruebe que Si x ∼ (µ, Σ) entonces E(x'Ax) = tr(AΣ) + µ'Aµ
 
 <br>
 
@@ -231,7 +231,7 @@ $$(\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}Σ_{ji})+\mu'A\mu=(\sum_{i=1}^{n}\sum_{j=1}
 <br>
 <br>
 
-### Práctico 1 Ej 14 
+# Práctico 1 Ej 14 
 
 Se considera la función de densidad dada por
 
@@ -248,7 +248,7 @@ $$
 <br>
 <br>
 
-### Halle $$K$$ para que sea una función de densidad se tiene que cumplir:
+## Halle $$K$$ para que sea una función de densidad se tiene que cumplir:
 
 <br>
 
@@ -273,7 +273,7 @@ $$
 <br>
 <br>
 
-### Halle las funciónes de densidad marginales
+## Halle las funciónes de densidad marginales
 
 <br>
 
@@ -311,7 +311,7 @@ $$
 <br>
 <br>
 
-### Halle las densidades condicionales
+## Halle las densidades condicionales
 
 <br>
 
@@ -342,7 +342,7 @@ $$
 <br>
 <br>
 
-### Halle el vector de medias
+## Halle el vector de medias
 
 <br>
 
