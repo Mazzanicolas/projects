@@ -596,11 +596,11 @@ $$
 Descomponer la varianza de la variable X teniendo en cuenta el condicionamiento a Y
 
 $$
-Var(X)=Var(E[X|Y])+E[Var(X|Y)] \ \text{queremos obtener} \ 
+Var(X)=Var(\mathbb{E}[X|Y])+\mathbb{E}[Var(X|Y)] \ \text{queremos obtener} \ 
 \left\{\begin{matrix}
-Var(E[X|Y]) \\
+Var(\mathbb{E}[X|Y]) \\
 \\
-E[Var(X|Y)]
+\mathbb{E}[Var(X|Y)]
 \end{matrix}\right.
 $$
 
@@ -618,10 +618,77 @@ $$
 
 | | | | |
 |-|-|-|-|
-| |Y| | |
-|X|0|1|$$P(X=x_i)$$|
-|0|$\frac{3}{10}$|$\frac{3}{10}$|$\frac{3}{5}$|
-|1|$\frac{3}{10}$|$\frac{1}{10}$|$\frac{2}{5}$|
-|$P(Y=y_i)$|$\frac{3}{5}$|$\frac{2}{5}$
+| |$$Y$$| | |
+|$$X$$|$$0$$|$$1$$|$$P(X=x_i)$$|
+|$$0$$|$$\frac{3}{10}$$|$$\frac{3}{10}$$|$$\frac{3}{5}$$|
+|$$1$$|$$\frac{3}{10}$$|$$\frac{1}{10}$$|$$\frac{2}{5}$$|
+|$$P(Y=y_i)$$|$$\frac{3}{5}$$|$$\frac{2}{5}$$|
+
+
+
+$$
+\mathbb{E}[X|Y]=
+\left\{\begin{matrix}
+\frac{1}{2} & \text{ si }\ Y=0\\
+\\
+\frac{1}{4} & \text{ si }\ Y=1
+\end{matrix}\right.
+$$
+
+$$
+\mathbb{E}(\mathbb{E}[X|Y]^2)=
+\left(
+ \frac{1}{2}
+\right)^2*P(Y=0)+
+\left(
+ \frac{1}{4}
+\right)^2*P(Y=1)=
+\left(
+ \frac{1}{2}
+\right)^2*\frac{3}{5}+
+\left(
+ \frac{1}{4}
+\right)^2*\frac{2}{5}=
+\frac{7}{40}
+$$
+
+<br>
+
+$$
+Var(\mathbb{E}[X|Y])=\mathbb{E}(\mathbb{E}[X|Y]^2)-\mathbb{E}(\mathbb{E}[X|Y])^2=\mathbb{E}(\mathbb{E}[X|Y]^2)-\mathbb{E}(X)^21=\mathbb{E}(\mathbb{E}[X|Y]^2)-\left(
+ \frac{2}{5}
+\right)^2
+$$
+
+$$
+=\frac{7}{40}-\left(
+ \frac{2}{5}
+\right)^2=\frac{3}{200}
+$$
+
+<br>
+
+$$
+\mathbb{E}[Var(X|Y)]=\mathbb{E}(\mathbb{E}[X^2|Y]-\mathbb{E}(X|Y)^2)=\mathbb{E}[X^2]-\mathbb{E}[\mathbb{E}(X|Y)^2]=\frac{2}{5}-\mathbb{E}[\mathbb{E}(X|Y)^2]
+$$
+
+$$
+=\frac{2}{5}-\frac{7}{40}=\frac{9}{40}
+$$
+
+<br>
+
+$$
+Var(X)=\mathbb{E}(X^2)-\mathbb{E}(X)^2=\frac{2}{5}-
+\left(
+ \frac{2}{5}
+\right)^2=\frac{6}{25}
+$$
+
+$$
+\frac{3}{200}+\frac{9}{40}=\frac{6}{25}
+$$
+
+
 
 <br><br><br>
