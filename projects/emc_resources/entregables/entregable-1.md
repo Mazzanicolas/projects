@@ -163,12 +163,14 @@ Repetir el paso anterior con la base de datos de Iris.
 
 ## Practico 1 
 
-Ej 8 Sean x e y vectores aleatorios, A y B matrices y c un vector fijo (no aleatorio) real. Pruebe que:
+#### Ej 8
+
+Sean x e y vectores aleatorios, A y B matrices y c un vector fijo (no aleatorio) real.
 
 <br>
 <br>
 
-#### $$\mathbb{E}(Ax) = A\mathbb{E}(x)$$
+#### Pruebe que $$\mathbb{E}(Ax) = A\mathbb{E}(x)$$
 
 <br>
 
@@ -177,7 +179,7 @@ $$\mathbb{E}(Ax)=\frac{1}{n}\sum_{i=1}^{n}Ax_i=A\frac{1}{n}\sum_{i=1}^{n}x_i=A\m
 <br>
 <br>
 
-#### $$Cov(Ax,By) = ACov(x,y)B'$$
+#### Pruebe que $$Cov(Ax,By) = ACov(x,y)B'$$
 
 <br>
 
@@ -186,25 +188,29 @@ $$Cov(Ax,By)=\mathbb{E}((Ax-\bar{x})(By-\bar{y})')=\mathbb{E}(A(x-\bar{x})(y-\ba
 <br>
 <br>
 
-#### $$Var(Ax) = AVar(x)A'$$
+#### Pruebe que $$Var(Ax) = AVar(x)A'$$
 
 <br>
 
-$$Var(Ax)=Cov(Ax,Ax)=\mathbb{E}((Ax-\bar{x})(Ax-\bar{x})')=\mathbb{E}(A(x-\bar{x})(x-\bar{x})'A')=A\mathbb{E}((x-\bar{x})(x-\bar{x})')A'=ACov(x,x)A'=AVar(x)A'$$
+$$Var(Ax)=Cov(Ax,Ax)=\mathbb{E}((Ax-\bar{x})(Ax-\bar{x})')=\mathbb{E}(A(x-\bar{x})(x-\bar{x})'A')$$
 
-<br>
-<br>
-
-#### $$Cov(x, y) = \mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
-
-<br>
-
-$$Cov(x,y)=\mathbb{E}((x-\mathbb{E}(x))(y-\mathbb{E}(y))')=\mathbb{E}(xy'-x\mathbb{E}(y)'-\mathbb{E}(x)y'+\mathbb{E}(x)\mathbb{E}(y)')=\mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'-\mathbb{E}(x)\mathbb{E}(y)'+\mathbb{E}(x)\mathbb{E}(y)'=\mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
+$$=A\mathbb{E}((x-\bar{x})(x-\bar{x})')A'=ACov(x,x)A'=AVar(x)A'$$
 
 <br>
 <br>
 
-#### $$Var(x-c) = Var(x)$$
+#### Pruebe que $$Cov(x, y) = \mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
+
+<br>
+
+$$Cov(x,y)=\mathbb{E}((x-\mathbb{E}(x))(y-\mathbb{E}(y))')=\mathbb{E}(xy'-x\mathbb{E}(y)'-\mathbb{E}(x)y'+\mathbb{E}(x)\mathbb{E}(y)')$$
+
+$$=\mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'-\mathbb{E}(x)\mathbb{E}(y)'+\mathbb{E}(x)\mathbb{E}(y)'=\mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
+
+<br>
+<br>
+
+#### Pruebe que $$Var(x-c) = Var(x)$$
 
 <br>
 
@@ -217,7 +223,7 @@ $$=\mathbb{E}(x^2)-2c\mathbb{E}(x)+c^2-(\mathbb{E}(x)^2-2c\mathbb{E}(x)+c^2)=\ma
 <br>
 <br>
 
-#### Si x ∼ (µ, Σ) entonces E(x'Ax) = tr(AΣ) + µ'Aµ
+#### Pruebe que Si x ∼ (µ, Σ) entonces E(x'Ax) = tr(AΣ) + µ'Aµ
 
 <br>
 
@@ -250,7 +256,9 @@ $$
 
 $$\int_{0}^{1} \int_{0}^{1-x}f(x,y)\ dydx=1$$
 
-$$\int_{0}^{1} \int_{0}^{1-x}Kx\ dydx = \int_{0}^{1} Kxy\ \vert_{0}^{1-x} \ dx=\int_{0}^{1} Kx(1-x)-Kx(0) \ dx=\int_{0}^{1} Kx-Kx^2\ dx=\int_{0}^{1} Kx\ dx-\int_{0}^{1}Kx^2\ dx= K\frac{x^2}{2} \vert_{0}^{1}- K\frac{x^3}{3} \ \vert_{0}^{1}$$
+$$\int_{0}^{1} \int_{0}^{1-x}Kx\ dydx = \int_{0}^{1} Kxy\ \vert_{0}^{1-x} \ dx=\int_{0}^{1} Kx(1-x)-Kx(0) \ dx=\int_{0}^{1} Kx-Kx^2\ dx$$
+
+$$=\int_{0}^{1} Kx\ dx-\int_{0}^{1}Kx^2\ dx= K\frac{x^2}{2} \vert_{0}^{1}- K\frac{x^3}{3} \ \vert_{0}^{1}$$
 
 $$=K\frac{1^2}{2}-K\frac{0}{2} -( K\frac{1^3}{3} -K\frac{0}{3})=K\frac{1}{2} - K\frac{1}{3})=\frac{K}{6}$$
 
@@ -274,16 +282,33 @@ $$
 $$f_x(x)=\int_{-\infty}^{+\infty} f_{xy}(x,y)\ dy=\int_{-\infty}^{-0} 0\ dy+\int_{0}^{1-x} 6x\ dy+\int_{1-x}^{+\infty}0\ dy=\int_{0}^{1-x} 6x\ dy=6xy\vert_{0}^{1-x}=6x(1-x)=6x-6x^2$$
 
 $$
-\int_{-\infty}^{+\infty} f_x(x)\ dx=1 \Rightarrow \int_{-\infty}^{0}0\ dx+\int_{0}^{1} 6x-6x^2\ dx + \int_{1}^{+\infty}0\ dx=\int_{0}^{1} 6x-6x^2\ dx=\int_{0}^{1} 6x\ dx-\int_{0}^{1} 6x^2\ dx = 3x^2\vert_{0}^{1}-2x^3\vert_{0}^{1}=3-2=1
+\int_{-\infty}^{+\infty} f_x(x)\ dx=1
 $$
 
 $$
-f_y(y)=\int_{-\infty}^{+\infty} f_{xy}(x,y)\ dx=\int_{-\infty}^{0} 0\ dx+\int_{0}^{1-y} 6x\ dx+\int_{1-y}^{+\infty} 0\ dx=\int_{0}^{1-y} 6x\ dx=3x^2\vert_{0}^{1-y}=3(1-y)^2=3(1-2y+y^2)=3-6y+3y^2
+ \Rightarrow \int_{-\infty}^{0}0\ dx+\int_{0}^{1} 6x-6x^2\ dx + \int_{1}^{+\infty}0\ dx=\int_{0}^{1} 6x-6x^2\ dx
+$$
+$$
+=\int_{0}^{1} 6x\ dx-\int_{0}^{1} 6x^2\ dx = 3x^2\vert_{0}^{1}-2x^3\vert_{0}^{1}=3-2=1
 $$
 
 $$
-\int_{-\infty}^{+\infty} f_y(y)\ dy=1 \Rightarrow \int_{-\infty}^{0}0\ dy +\int_{0}^{1}3-6y+3y^2\ dy+\int_{1}^{+\infty}0\ dy=\int_{0}^{1}3-6y+3y^2\ dy=\int_{0}^{1}3\ dy- \int_{0}^{1}6y\ dy+ \int_{0}^{1}3y^2\ dy=3y\vert_{0}^{1}-3y^2\vert_{0}^{1}+y^3\vert_{0}^{1}=3-3+1=1
+f_y(y)=\int_{-\infty}^{+\infty} f_{xy}(x,y)\ dx=\int_{-\infty}^{0} 0\ dx+\int_{0}^{1-y} 6x\ dx+\int_{1-y}^{+\infty} 0\ dx=\int_{0}^{1-y} 6x\ dx=3x^2\vert_{0}^{1-y}
 $$
+$$
+=3(1-y)^2=3(1-2y+y^2)=3-6y+3y^2
+$$
+
+$$
+\int_{-\infty}^{+\infty} f_y(y)\ dy=1
+$$
+
+$$
+ \Rightarrow \int_{-\infty}^{0}0\ dy +\int_{0}^{1}3-6y+3y^2\ dy+\int_{1}^{+\infty}0\ dy=\int_{0}^{1}3-6y+3y^2\ dy
+ $$
+ $$
+=\int_{0}^{1}3\ dy- \int_{0}^{1}6y\ dy+ \int_{0}^{1}3y^2\ dy=3y\vert_{0}^{1}-3y^2\vert_{0}^{1}+y^3\vert_{0}^{1}=3-3+1=1
+ $$
 
 <br>
 <br>
