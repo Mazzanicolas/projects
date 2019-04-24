@@ -5,6 +5,8 @@
 
 <br>
 
+Para una lectura mas amigable [leer aquí](https://mazzanicolas.github.io/projects/projects/emc_resources/entregables/entregable-1.html)
+
 Estadística Multivariada Computacional: Entregable 1, Nicolás Mazza.
 
 Docente: Mathias Bourel
