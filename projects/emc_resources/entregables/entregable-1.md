@@ -1,8 +1,11 @@
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 # Entregable 1
 
 ## Practico 0 Ej. 7
 
-### Practico 0 - 7) Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 observaciones (o sea 6 filas).
+#### Practico 0 - 7) Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 observaciones (o sea 6 filas).
 
 `c1 <- c(1,2,3,4,5,6)`
 
@@ -26,7 +29,7 @@
 > typeof(c5)
 [1] "character"
 ```
-### 0 - 7 - a) Dar nombres a las filas y nombres a las columnas.
+#### 0 - 7 - a) Dar nombres a las filas y nombres a las columnas.
 
 `colnames(miejemplo) <- c('col_1','col_2','col_3','col_4','col_5')`
 
@@ -43,7 +46,7 @@ row_5     5    10    20    40     e
 row_6     6    12    24    48     f
 ```
 
-### 0 - 7 - b) Añadir a este objeto una columna que sea la suma de las 3 primeras columnas numéricas y otra columna que indica con 0/1 si el valor numérico de la segunda columna es mayor que 5 o no. Dar un nombre a estas nuevas columnas.
+#### 0 - 7 - b) Añadir a este objeto una columna que sea la suma de las 3 primeras columnas numéricas y otra columna que indica con 0/1 si el valor numérico de la segunda columna es mayor que 5 o no. Dar un nombre a estas nuevas columnas.
 
 `miejemplo$$sum_1_2_3 <- miejemplo$$col_1 + miejemplo$$col_2 + miejemplo$$col_3`
 
@@ -63,7 +66,7 @@ row_4     4     8    16    32     d      28       1
 row_5     5    10    20    40     e      35       1
 row_6     6    12    24    48     f      42       1
 ```
-### 0 - 7- c) Borrar la primera fila y la última columna. Dar un nombre a este nuevo objeto
+#### 0 - 7- c) Borrar la primera fila y la última columna. Dar un nombre a este nuevo objeto
 
 `nuevo_ejemplo <- miejemplo[-1,-length(miejemplo)]`
 
@@ -77,7 +80,7 @@ row_5     5    10    20    40     e      35
 row_6     6    12    24    48     f      42
 ```
 
-### 0 - 7 - d) Hacer un resumen estadístico de los datos de este data frame cuando esto tiene sentido.
+#### 0 - 7 - d) Hacer un resumen estadístico de los datos de este data frame cuando esto tiene sentido.
 
 *En realidad no tiene mucho sentido hacer un resumen estadístico de estos datos, pero ahí van.*
 
@@ -100,7 +103,7 @@ row_6     6    12    24    48     f      42
  Max.   :1.0000
 ```
 
-### 0 - 7 - e) Escribir miejemplo en un archivo de texto miejemplo.txt. Borrar el objeto de R. Cargar este archivo en el objeto miejemplo2.
+#### 0 - 7 - e) Escribir miejemplo en un archivo de texto miejemplo.txt. Borrar el objeto de R. Cargar este archivo en el objeto miejemplo2.
 
 `write.table(miejemplo, 'miejemplo.csv', append = FALSE, sep = ",", dec = ".", row.names = TRUE, col.names = TRUE)`
 
@@ -124,7 +127,7 @@ row_5     5    10    20    40     e      35       1
 row_6     6    12    24    48     f      42       1
 ```
 
-### 0 - 7 - f) Repetir el paso anterior con la base de datos de Iris.
+#### 0 - 7 - f) Repetir el paso anterior con la base de datos de Iris.
 
 `write.table(iris, 'iris.csv', append = FALSE, sep = ",",dec = ".", row.names = TRUE,col.names = TRUE)`
 
@@ -146,23 +149,23 @@ row_6     6    12    24    48     f      42       1
 
 ## Practico 1 Ej 8 Sean x e y vectores aleatorios, A y B matrices y c un vector fijo (no aleatorio) real. Pruebe que:
 
-### $$\mathbb{E}(Ax) = A\mathbb{E}(x)$$
+#### $$\mathbb{E}(Ax) = A\mathbb{E}(x)$$
 
 $$\mathbb{E}(Ax)=\frac{1}{n}\sum_{i=1}^{n}Ax_i=A\frac{1}{n}\sum_{i=1}^{n}x_i=A\mathbb{E}(x)$$
 
-### $$Cov(Ax,By) = ACov(x,y)B'$$
+#### $$Cov(Ax,By) = ACov(x,y)B'$$
 
 $$Cov(Ax,By)=\mathbb{E}((Ax-\bar{x})(By-\bar{y})')=\mathbb{E}(A(x-\bar{x})(y-\bar{y})'B')=A\mathbb{E}((x-\bar{x})(y-\bar{y})')B'=ACov(x,y)B'$$
 
-### $$Var(Ax) = AVar(x)A'$$
+#### $$Var(Ax) = AVar(x)A'$$
 
 $$Var(Ax)=Cov(Ax,Ax)=\mathbb{E}((Ax-\bar{x})(Ax-\bar{x})')=\mathbb{E}(A(x-\bar{x})(x-\bar{x})'A')=A\mathbb{E}((x-\bar{x})(x-\bar{x})')A'=ACov(x,x)A'=AVar(x)A'$$
 
-### $$Cov(x, y) = \mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
+#### $$Cov(x, y) = \mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
 
 $$Cov(x,y)=\mathbb{E}((x-\mathbb{E}(x))(y-\mathbb{E}(y))')=\mathbb{E}(xy'-x\mathbb{E}(y)'-\mathbb{E}(x)y'+\mathbb{E}(x)\mathbb{E}(y)')=\mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'-\mathbb{E}(x)\mathbb{E}(y)'+\mathbb{E}(x)\mathbb{E}(y)'=\mathbb{E}(xy')-\mathbb{E}(x)\mathbb{E}(y)'$$
 
-### $$Var(x-c) = Var(x)$$
+#### $$Var(x-c) = Var(x)$$
 
 $$Var(x-c)=\mathbb{E}((x-c)^2)-(\mathbb{E}(x-c))^2=\mathbb{E}(x^2-2xc+c^2)-(\mathbb{E}(x)-\mathbb{E}(c))^2=\mathbb{E}(x^2)-\mathbb{E}(2xc)+\mathbb{E}(c^2)-(\mathbb{E}(x)-\mathbb{E}(c))^2$$
 
@@ -170,7 +173,7 @@ $$=\mathbb{E}(x^2)-\mathbb{E}(2xc)+\mathbb{E}(c^2)-(\mathbb{E}(x)^2-2\mathbb{E}(
 
 $$=\mathbb{E}(x^2)-2c\mathbb{E}(x)+c^2-(\mathbb{E}(x)^2-2c\mathbb{E}(x)+c^2)=\mathbb{E}(x^2)-2c\mathbb{E}(x)+c^2-\mathbb{E}(x)^2+2c\mathbb{E}(x)-c^2=\mathbb{E}(x^2)-\mathbb{E}(x)^2=Var(x)$$
 
-### Si x ∼ (µ, Σ) entonces E(x'Ax) = tr(AΣ) + µ'Aµ
+#### Si x ∼ (µ, Σ) entonces E(x'Ax) = tr(AΣ) + µ'Aµ
 
 $$X'AX=(X-\mu)'AX+\mu'AX=(X-\mu)'A(X-\mu)+\mu'AX+(X-\mu)'A\mu$$
 $$\Rightarrow \mathbb{E}(X'AX)=\mathbb{E}((X-\mu)'A(X-\mu))+\mu'A\mu$$
@@ -187,7 +190,7 @@ Kx & si\ \ 0 < x < 1,\ 0 < y < 1 - x\\
 \end{matrix}\right.
 $$
 
-### Halle $$K$$
+#### Halle $$K$$
 
 Para que sea una función de densidad se tiene que cumplir:
 
@@ -207,7 +210,7 @@ f(x, y) =
 \end{matrix}\right.
 $$
 
-### Halle las funciónes de densidad marginales
+#### Halle las funciónes de densidad marginales
 
 $$f_x(x)=\int_{-\infty}^{+\infty} f_{xy}(x,y)\ dy=\int_{-\infty}^{-0} 0\ dy+\int_{0}^{1-x} 6x\ dy+\int_{1-x}^{+\infty}0\ dy=\int_{0}^{1-x} 6x\ dy=6xy\vert_{0}^{1-x}=6x(1-x)=6x-6x^2$$
 
