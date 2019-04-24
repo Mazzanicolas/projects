@@ -5,13 +5,13 @@
 
 <br>
 
-Para una lectura mas amigable [leer aquí](https://mazzanicolas.github.io/projects/projects/emc_resources/entregables/entregable-1.html)
-
 Estadística Multivariada Computacional: Entregable 1, Nicolás Mazza.
 
 Docente: Mathias Bourel
 
 Miércoles, 24 de abril de 2019
+
+<br>
 
 <br>
 
@@ -25,7 +25,6 @@ Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 
 `c5 <- c('a', 'b', 'c', 'd', 'e', 'f')`
 
 `c2<-(c1*2)`
-
 `c3<-(c2*2)`
 `c4<-(c3*2)`
 
@@ -707,3 +706,7 @@ $$
 $$
 \frac{3}{200}+\frac{9}{40}=\frac{6}{25}
 $$
+
+
+
+<br><br><br>
