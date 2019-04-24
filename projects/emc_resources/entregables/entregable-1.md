@@ -3,6 +3,18 @@
 
 # Entregable 1
 
+<br>
+
+Estadística Multivariada Computacional: Entregable 1, Nicolás Mazza.
+
+Docente: Mathias Bourel
+
+Miércoles, 24 de abril de 2019
+
+<br>
+
+<br>
+
 # Práctico 0 Ej 7
 
 Crear un data.frame miejemplo con 5 columnas (4 numéricas y 1 categórica) y 6 observaciones (o sea 6 filas).
@@ -226,8 +238,11 @@ $$=\mathbb{E}(x^2)-2c\mathbb{E}(x)+c^2-(\mathbb{E}(x)^2-2c\mathbb{E}(x)+c^2)=\ma
 <br>
 
 $$X'AX=(X-\mu)'AX+\mu'AX=(X-\mu)'A(X-\mu)+\mu'AX+(X-\mu)'A\mu$$
+
 $$\Rightarrow \mathbb{E}(X'AX)=\mathbb{E}((X-\mu)'A(X-\mu))+\mu'A\mu$$
+
 $$=(\sum_{i=1}^{n}\sum_{j=1}^{n}\mathbb{E}[(X-\mu)_i'A_{ij}(X-\mu)_i])+\mu'A\mu=(\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}Var(X-\mu)_{ij})+\mu'A\mu=(\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}Σ_{ij})+\mu'A\mu$$
+
 $$(\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}Σ_{ji})+\mu'A\mu=(\sum_{i=1}^{n}\sum_{j=1}^{n}(AΣ)_{ii})+\mu'A\mu=tr(AΣ)+\mu'A\mu$$
 
 <br>
@@ -250,9 +265,11 @@ $$
 <br>
 <br>
 
-## Halle $$K$$ para que sea una función de densidad se tiene que cumplir:
+## Halle K 
 
 <br>
+
+Para que sea una función de densidad se tiene que cumplir:
 
 $$\int_{0}^{1} \int_{0}^{1-x}f(x,y)\ dydx=1$$
 
@@ -404,5 +421,116 @@ $$
 \begin{pmatrix}
  \frac{1}{2}\\
  \frac{1}{4}
+\end{pmatrix}
+$$
+
+<br>
+<br>
+
+## Halle la matriz de Varianzas-Covarianzas
+
+<br>
+
+$$
+\begin{pmatrix}
+Var(X) & Cov(X,Y)\\
+Cov(X,Y) & Var(Y) 
+\end{pmatrix}
+$$
+
+<br>
+
+$$
+Var(X)=\mathbb{E}[X^2]-(\mathbb{E}[X])^2
+$$
+
+<br>
+
+$$
+\mathbb{E}[X^2]=\int_{-\infty}^{+\infty} x^2f_x(x)\ dx=\int_{-\infty}^{+\infty} x^2(6x-6x^2)\ dx=\int_{-\infty}^{0} 0\ dx +\int_{0}^{1} x^2(6x-6x^2)\ dx +\int_{1}^{+\infty} 0\ dx =\int_{0}^{1} x^2(6x-6x^2)\ dx
+$$
+
+$$
+=\int_{0}^{1} 6x^3-6x^4\ dx=\int_{0}^{1} 6x^3\ dx-\int_{0}^{1} 6x^4\ dx=\frac{3x^4}{2}\vert_{0}^{1}-\frac{6x^5}{5}\vert_{0}^{1}=\frac{3}{2}-\frac{6}{5}=\frac{3}{10}
+$$
+
+<br>
+
+$$
+Var(X)=\mathbb{E}[X^2]-(\mathbb{E}[X])^2=\frac{3}{10}-
+\left(
+ \frac{1}{2}
+\right)^2
+=\frac{1}{20}=0.05
+$$
+
+<br>
+<br>
+
+$$
+Var(Y)=\mathbb{E}[Y^2]-(\mathbb{E}[Y])^2
+$$
+
+<br>
+
+$$
+\mathbb{E}[Y^2]=\int_{-\infty}^{+\infty} y^2f_y(y)\ dy=\int_{-\infty}^{+\infty} y^2(3-6y+3y^2)\ dy=\int_{-\infty}^{0} 0\ dy +\int_{0}^{1} y^2(3-6y+3y^2)\ dy +\int_{1}^{+\infty} 0\ dy =\int_{0}^{1} y^2(3-6y+3y^2)\ dy
+$$
+
+$$
+=\int_{0}^{1} y^2(3-6y+3y^2)\ dy=\int_{0}^{1} 3y^2-6y^3+3y^4\ dy=\int_{0}^{1}3y^2\ dy-\int_{0}^{1}6y^3\ dy+\int_{0}^{1}3y^4\ dy
+$$
+
+$$
+y^3\vert_{0}^{1}-\frac{3y^4}{2}\vert_{0}^{1}+\frac{3y^5}{5}\vert_{0}^{1}=1-\frac{3}{2}+\frac{3}{5}=\frac{1}{10}
+$$
+
+<br>
+
+$$
+Var(Y)=\mathbb{E}[Y^2]-(\mathbb{E}[Y])^2=\frac{1}{10}-
+\left(
+ \frac{1}{4}
+\right)^2
+=\frac{3}{80}=0.0375
+$$
+
+<br>
+<br>
+
+$$
+Cov(X,Y)=\mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]
+$$
+
+<br>
+
+$$
+\mathbb{E}[XY] = \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} xyf_{xy}(xy)\ dydx=\int_{-\infty}^{0}\int_{-\infty}^{0} 0\ dydx+\int_{0}^{1}\int_{0}^{1-x}xy(6x)\ dydx+\int_{-\infty}^{0}\int_{-\infty}^{0} 0\ dydx=\int_{0}^{1}\int_{0}^{1-x}xy(6x)\ dydx
+$$
+
+$$
+=\int_{0}^{1}\int_{0}^{1-x}xy(6x)\ dydx=\int_{0}^{1}\int_{0}^{1-x}6x^2y\ dydx=\int_{0}^{1}3x^2y^2 \vert_{0}^{1-x}\ dx=\int_{0}^{1}3x^2(1-x)^2\ dx=\int_{0}^{1}3x^2(1-2x+x^2)\ dx
+$$
+
+$$
+=\int_{0}^{1}3x^2-6x^3+3x^4\ dx=\int_{0}^{1}3x^2\ dx-\int_{0}^{1}6x^3 dx+\int_{0}^{1}3x^4\ dx=x^3\vert_{0}^{1}-\frac{3x^4}{2}\vert_{0}^{1}+\frac{3x^5}{5}\vert_{0}^{1}=1-\frac{3}{2}+\frac{3}{5}=\frac{1}{10}
+$$
+
+<br>
+
+$$
+Cov(X,Y)=\mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]=\frac{1}{10}-\frac{1}{2}*\frac{1}{4}=-\frac{1}{40}=-0.025
+$$
+
+<br>
+
+$$
+\begin{pmatrix}
+Var(X) & Cov(X,Y)\\
+Cov(X,Y) & Var(Y) 
+\end{pmatrix}=
+\begin{pmatrix}
+\frac{1}{20} & -\frac{1}{40}\\
+-\frac{1}{40} & \frac{3}{80} 
 \end{pmatrix}
 $$
